@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Kumar Mehul
 - 👀 I’m interested in Databases
-- 🌱 I’m currently learning Data Courses
+- 🌱 I’m currently learning Data Courses @Northeastern University
 <!--
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...
