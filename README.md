@@ -1,8 +1,8 @@
 - 👋 Hi, I’m Kumar Mehul
-- 👀 I’m interested in the field of Data
+- 👀 Aspiring Data/Business Analyst
 - 🌱 I’m currently pursuing MS Information Systems with Data Specialization @Northeastern University
-- 💞️ I’m looking to collaborate on Database and Data Science Projects
-- 📫 You can reach me @mmishranwd@gmail.com
+- 💞️ I’m looking to collaborate on Data Analyst role based projects
+- 📫 You can reach me @kumar-mehul@outlook.com
 <!--
 <!---
 kmehul/kmehul is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
