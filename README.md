@@ -34,6 +34,10 @@
   ![Azure Data Studio](https://img.shields.io/badge/-Azure%20Data%20Studio-333333?style=flat&logo=microsoft-azure)
   ![Data Pipelining](https://img.shields.io/badge/-Data%20Pipelining-333333?style=flat)
 
+<h3> 👀🏻‍💻 &nbsp;Visitor Count </h3>
+
+<img src="https://profile-counter.glitch.me/kmehul/count.svg" alt="Hello world" />
+
 <br/>
 
 <a href="https://github.com/kmehul">
