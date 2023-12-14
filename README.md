@@ -1,8 +1,12 @@
-- 👋 Hi, I’m Kumar Mehul
-- 👀 Aspiring Data/Business Analyst
-- 🌱 I’m currently pursuing MS Information Systems with Data Specialization @Northeastern University
-- 💞️ I’m looking to collaborate on Data Analyst role based projects
-- 📫 You can reach me @kumar-mehul@outlook.com
+## Hi, I’m [Kumar Mehul]
+
+### 👨🏻‍💻 &nbsp;About Me
+- 👀 &nbsp; I’m interested in [Data Engineering and Analysis]
+- 🤔 &nbsp; [A Personal Statement or Goal]
+- 🎓 &nbsp; Studying [Your Major] at [Your University]
+- 💼 &nbsp; Worked at [Your Past Employers]
+- 🌱 &nbsp; Learning more about [Your Learning Goals]
+
 <!--
 <!---
 kmehul/kmehul is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
