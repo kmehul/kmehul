@@ -1,4 +1,4 @@
-## Hi, I’m Kumar Mehul.
+## Hi, I’m Mehul.
 
 ### 👨🏻‍💻 &nbsp;About Me
 - 👀 &nbsp; I’m interested in Data Engineering and Analysis.
@@ -34,6 +34,14 @@
   ![Azure Data Studio](https://img.shields.io/badge/-Azure%20Data%20Studio-333333?style=flat&logo=microsoft-azure)
   ![Data Pipelining](https://img.shields.io/badge/-Data%20Pipelining-333333?style=flat)
 
+<br/>
+
+<a href="https://github.com/[Your GitHub Username]">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=[Your GitHub Username]&theme=buefy" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=[Your GitHub Username]&theme=buefy" />
+</a>
+
+<br/>
 
 <!--
 <!---
