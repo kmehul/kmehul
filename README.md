@@ -36,7 +36,7 @@
 
 <br/>
 
-<a href="https://github.com/[Your GitHub Username]">
+<a href="https://github.com/kmehul">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=[Your GitHub Username]&theme=buefy" />
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=[Your GitHub Username]&theme=buefy" />
 </a>
