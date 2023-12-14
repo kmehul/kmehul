@@ -50,9 +50,10 @@
 ### 🤝🏻 &nbsp;Connect with Me
 
 <p align="center">
-<a href="https://www.linkedin.com/in/kmehul992/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Kumar%20Mehul-blue?style=flat-square&logo=linkedin"></a>
-<a href="mailto:kumar-mehul@outlook.com"><img alt="Email" src="https://img.shields.io/badge/Email-kumar--mehul%40outlook.com-blue?style=flat-square&logo=microsoft-outlook"></a>
+<a href="https://www.linkedin.com/in/kmehul992/" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Kumar%20Mehul-blue?style=flat-square&logo=linkedin"></a>
+<a href="mailto:kumar-mehul@outlook.com" target="_blank"><img alt="Email" src="https://img.shields.io/badge/Email-kumar--mehul%40outlook.com-blue?style=flat-square&logo=microsoft-outlook"></a>
 </p>
+
 
 
 <!--
