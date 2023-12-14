@@ -4,7 +4,7 @@
 - 👀 &nbsp; I’m interested in Data Engineering and Analysis.
 - 🤔 &nbsp; [A Personal Statement or Goal]
 - 🎓 &nbsp; Studying Information Systems at Northeastern University.
-- 🌱 &nbsp; Learning more about [Your Learning Goals]
+- 🌱 &nbsp; Learning more about Data Warehousing and Analysis.
 
 ### 🛠 &nbsp;Tech Stack
 
