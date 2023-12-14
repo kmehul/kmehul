@@ -31,6 +31,7 @@
 #### Additional Technologies
 - ⚙️ &nbsp;
   ![Git](https://img.shields.io/badge/-Git-333333?style=flat&logo=git)
+  ![GitHub](https://img.shields.io/badge/-GitHub-333333?style=flat&logo=github)
   ![Azure Data Studio](https://img.shields.io/badge/-Azure%20Data%20Studio-333333?style=flat&logo=microsoft-azure)
   ![Data Pipelining](https://img.shields.io/badge/-Data%20Pipelining-333333?style=flat)
 
