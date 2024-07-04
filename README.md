@@ -38,7 +38,6 @@
 ## 👀 Visitor Count
 <img src="https://profile-counter.glitch.me/kmehul/count.svg" alt="Visitor Count" />
 
-<br/>
 
 ## 🤝 Connect with Me
 
