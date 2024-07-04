@@ -5,7 +5,7 @@
 - 🤔 Dedicated to empowering data-driven solutions in the digital age, transforming raw data into actionable intelligence.
 - 🎓 Completed Master's degree in Information Systems from Northeastern University.
 - 🌱 Continuously expanding my expertise in Data Warehousing and Analysis to stay ahead in the field.
-- 📸 Avid landscape photography enthusiast, capturing the beauty of spontaneous, breathtaking moments in nature.
+- 📸 Avid photography enthusiast, capturing the beauty of spontaneous, breathtaking moments.
 
 
 ## 🛠 Tech Stack
