@@ -1,11 +1,12 @@
 # Hi, I’m Mehul.
 
 ## 🌟 About Me
-- 👀 I’m passionate about Data Engineering and Analysis.
-- 🤔 Empowering Data-Driven Innovation in the Digital Age.
-- 🎓 Studying Information Systems at Northeastern University.
-- 🌱 Learning more about Data Warehousing and Analysis.
-- 📸 Landscape photography enthusiast, capturing spontaneous, beautiful moments.
+- 👀 Passionate about Data Engineering and Analysis, always seeking to uncover insights and drive innovation.
+- 🤔 Dedicated to empowering data-driven solutions in the digital age, transforming raw data into actionable intelligence.
+- 🎓 Recently earned a Master's degree in Information Systems from Northeastern University, equipping me with advanced technical skills and knowledge.
+- 🌱 Continuously expanding my expertise in Data Warehousing and Analysis to stay ahead in the field.
+- 📸 Avid landscape photography enthusiast, capturing the beauty of spontaneous, breathtaking moments in nature.
+
 
 ## 🛠 Tech Stack
 
