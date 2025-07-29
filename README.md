@@ -47,9 +47,9 @@
 <table align="center">
   <tr>
     <td align="center" width="96">
-      <a href="https://azure.microsoft.com/en-us/products/azure-sql/" target="_blank" rel="noreferrer">
-        <img src="https://user-images.githubusercontent.com/25181517/183896055-e8833612-9226-427c-9263-35f156d4b248.png" width="60" height="60" alt="Azure SQL" />
-        <br><strong>Azure SQL</strong>
+      <a href="" target="_blank" rel="noreferrer">
+        <img src="https://user-images.githubusercontent.com/25181517/183896055-e8833612-9226-427c-9263-35f156d4b248.png" width="60" height="60" alt="Azure SQL Databases" />
+        <br><strong>Azure SQL Databases</strong>
       </a>
     </td>
     <td align="center" width="96">
