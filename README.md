@@ -15,7 +15,6 @@
 <h3 align="left">📊 GitHub Stats</h3>
 <p align="center">
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=kmehul&show_icons=true&locale=en&theme=tokyonight" alt="kmehul" />
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=kmehul&layout=compact&locale=en&theme=tokyonight&hide=jupyter%20notebook" alt="kmehul" />
 </p>
 
 ---
