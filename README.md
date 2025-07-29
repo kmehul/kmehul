@@ -92,7 +92,7 @@
     </td>
     <td align="center" width="96">
       <a href="https://www.talend.com/" target="_blank" rel="noreferrer">
-        <img src="src-https://statics-dev.cloud.talend.com/@talend/common/images/favicon-logo-square.ico" width="55" height="55" alt="Talend" />
+        <img src="https://statics-dev.cloud.talend.com/@talend/common/images/favicon-logo-square.ico" width="55" height="55" alt="Talend" />
         <br><strong>Talend</strong>
       </a>
     </td>
