@@ -91,7 +91,7 @@
       </a>
     </td>
     <td align="center" width="96">
-      <a href="https://www.talend.com/" target="_blank" rel="noreferrer">
+      <a  target="_blank" rel="noreferrer">
         <img src="https://raw.githubusercontent.com/kmehul/kmehul/main/talend.png" width="55" height="55" alt="Talend" />
         <br><strong>Talend</strong>
       </a>
