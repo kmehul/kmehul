@@ -22,44 +22,33 @@
 <h3 align="left">🛠️ Tech Stack</h3>
 
 <p align="center">
-  <strong>Languages & Databases:</strong><br/><br/>
-  <a href="https://www.python.org" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="50" height="50"/> 
-  </a>
-  <a href="https://learn.microsoft.com/en-us/sql/t-sql/" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="T-SQL" width="50" height="50"/> 
-  </a>
-  <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" width="50" height="50"/> 
-  </a>
-  <a href="https://www.arangodb.com/" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/arangodb/arangodb-original-wordmark.svg" alt="ArangoDB" width="50" height="50"/> 
-  </a>
-  <a href="https://azure.microsoft.com/en-us/products/azure-sql/" target="_blank" rel="noreferrer">
-    <img src="https://img.shields.io/badge/Azure_SQL-0078D4?style=for-the-badge&logo=azure-sql-database&logoColor=white" alt="Azure SQL"/>
-  </a>
+  <strong>Languages & Databases:</strong>
+  <br/><br/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+  &nbsp;
+  <img src="https://img.shields.io/badge/T--SQL-0078D4?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" alt="T-SQL"/>
+  &nbsp;
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"/>
+  &nbsp;
+  <img src="https://img.shields.io/badge/ArangoDB-333333?style=for-the-badge&logo=arangodb&logoColor=white" alt="ArangoDB"/>
+  &nbsp;
+  <img src="https://img.shields.io/badge/Azure_SQL-0078D4?style=for-the-badge&logo=azure-sql-database&logoColor=white" alt="Azure SQL"/>
 </p>
 
 <p align="center">
-  <strong>BI, ETL & Data Tools:</strong><br/><br/>
-  <a href="https://www.tableau.com/" target="_blank" rel="noreferrer">
-    <img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white" alt="Tableau"/>
-  </a>
-  <a href="https://azure.microsoft.com/en-us/products/data-factory/" target="_blank" rel="noreferrer">
-    <img src="https://img.shields.io/badge/Azure_Data_Factory-0078D4?style=for-the-badge&logo=azure-data-factory&logoColor=white" alt="Azure Data Factory"/>
-  </a>
-  <a href="https://www.talend.com/" target="_blank" rel="noreferrer">
-    <img src="https://img.shields.io/badge/Talend-FF6D70?style=for-the-badge&logo=talend&logoColor=white" alt="Talend"/>
-  </a>
-  <a href="https://www.alteryx.com/" target="_blank" rel="noreferrer">
-    <img src="https://img.shields.io/badge/Alteryx-0078D4?style=for-the-badge&logo=alteryx&logoColor=white" alt="Alteryx"/>
-  </a>
-  <a href="https://learn.microsoft.com/en-us/sql/azure-data-studio/what-is-azure-data-studio" target="_blank" rel="noreferrer">
-    <img src="https://img.shields.io/badge/Azure_Data_Studio-0078D4?style=for-the-badge&logo=azure-data-studio&logoColor=white" alt="Azure Data Studio"/>
-  </a>
-  <a href="https://www.idera.com/er-studio-data-architect-software" target="_blank" rel="noreferrer">
-    <img src="https://img.shields.io/badge/ER/Studio-1E1E1E?style=for-the-badge" alt="ER/Studio"/>
-  </a>
+  <strong>BI, ETL & Data Tools:</strong>
+  <br/><br/>
+  <img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white" alt="Tableau"/>
+  &nbsp;
+  <img src="https://img.shields.io/badge/Azure_Data_Factory-0078D4?style=for-the-badge&logo=azure-data-factory&logoColor=white" alt="Azure Data Factory"/>
+  &nbsp;
+  <img src="https://img.shields.io/badge/Talend-FF6D70?style=for-the-badge&logo=talend&logoColor=white" alt="Talend"/>
+  &nbsp;
+  <img src="https://img.shields.io/badge/Alteryx-0078D4?style=for-the-badge&logo=alteryx&logoColor=white" alt="Alteryx"/>
+  &nbsp;
+  <img src="https://img.shields.io/badge/Azure_Data_Studio-0078D4?style=for-the-badge&logo=azure-data-studio&logoColor=white" alt="Azure Data Studio"/>
+  &nbsp;
+  <img src="https://img.shields.io/badge/ER/Studio-1E1E1E?style=for-the-badge" alt="ER/Studio"/>
 </p>
 
 ---
