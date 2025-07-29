@@ -1,48 +1,41 @@
-# Hi, I’m Mehul.
-
-## 🌟 About Me
-- 👀 Passionate about Data Engineering and Analysis, always seeking to uncover insights and drive innovation.
-- 🤔 Dedicated to empowering data-driven solutions in the digital age, transforming raw data into actionable intelligence.
-- 🎓 Completed Master's degree in Information Systems from Northeastern University.
-- 🌱 Continuously expanding my expertise in Data Warehousing and Analysis to stay ahead in the field.
-- 📸 Avid photography enthusiast, capturing the beauty of spontaneous, breathtaking moments.
-
-
-## 🛠 Tech Stack
-
-### Programming & Scripting
-- 💻 
-  ![Python](https://img.shields.io/badge/-Python-333333?style=flat&logo=python)
-  ![NoSQL](https://img.shields.io/badge/-NoSQL-333333?style=flat&logo=NoSQL)
-  ![SQL](https://img.shields.io/badge/-SQL-333333?style=flat&logo=MySQL)
-  ![T-SQL](https://img.shields.io/badge/-TSQL-333333?style=flat&logo=MicrosoftSQLServer)
-
-### Database Technologies
-- 🛢 
-  ![Azure SQL Databases](https://img.shields.io/badge/-Azure%20SQL%20Databases-333333?style=flat&logo=microsoft-azure)
-  ![MySQL Workbench](https://img.shields.io/badge/-MySQL%20Workbench-333333?style=flat&logo=mysql)
-  ![Azure Data Studio](https://img.shields.io/badge/-Azure%20Data%20Studio-333333?style=flat&logo=microsoft-azure)
-  ![ArangoDB](https://img.shields.io/badge/-ArangoDB-333333?style=flat&logo=ArangoDB)
-
-### Data Integration & ETL
-- 🛠 
-  ![Talend](https://img.shields.io/badge/-Talend-333333?style=flat&logo=Talend)
-  ![Azure Data Factory](https://img.shields.io/badge/-Azure%20Data%20Factory-333333?style=flat&logo=microsoft-azure)
-
-### Business Intelligence & Visualization
-- 📊 
-  ![Alteryx](https://img.shields.io/badge/-Alteryx-333333?style=flat&logo=Alteryx)
-  ![ER Studio](https://img.shields.io/badge/-ER%20Studio-333333?style=flat)
-  ![PowerBI](https://img.shields.io/badge/-Power%20BI-333333?style=flat&logo=powerbi)
-  ![Tableau](https://img.shields.io/badge/-Tableau-333333?style=flat&logo=Tableau)
-
-## 👀 Visitor Count
-<img src="https://profile-counter.glitch.me/kmehul/count.svg" alt="Visitor Count" />
-
-
-## 🤝 Connect with Me
+<h1 align="center">Hi there, I'm Kumar Mehul 👋</h1>
+<h3 align="center">A Data Professional passionate about building end-to-end data solutions.</h3>
 
 <p align="center">
-<a href="https://www.linkedin.com/in/kmehul992/" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Kumar%20Mehul-blue?style=flat-square&logo=linkedin"></a>
-<a href="mailto:kumar-mehul@outlook.com" target="_blank"><img alt="Email" src="https://img.shields.io/badge/Email-kumar--mehul%40outlook.com-blue?style=flat-square&logo=microsoft-outlook"></a>
+  I specialize in the full data lifecycle—from engineering robust ETL pipelines and designing data models to creating intuitive BI dashboards that drive business decisions. I'm leveraging my Master's in Information Systems from Northeastern University to solve complex problems with data.
+</p>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/kmehul992/" target="blank"><img align="center" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="kmehul" /></a>
+  <a href="mailto:kumar-mehul@outlook.com" target="blank"><img align="center" src="https://img.shields.io/badge/Email-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" alt="kmehul" /></a>
+</p>
+
+---
+
+<h3 align="left">📊 GitHub Stats</h3>
+<p align="center">
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=kmehul&show_icons=true&locale=en&theme=tokyonight" alt="kmehul" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=kmehul&layout=compact&locale=en&theme=tokyonight" alt="kmehul" />
+</p>
+
+---
+
+<h3 align="left">🛠️ Tech Stack</h3>
+<p align="center">
+  <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
+  <a href="https://azure.microsoft.com/en-us/products/azure-sql/" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/373449/azure-sql-database.svg" alt="azure-sql" width="40" height="40"/> </a>
+  <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a>
+  <a href="https://www.arangodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/arangodb/arangodb-original-wordmark.svg" alt="arangodb" width="40" height="40"/> </a>
+  <a href="https://learn.microsoft.com/en-us/sql/azure-data-studio/what-is-azure-data-studio" target="_blank" rel="noreferrer"> <img src="https://user-images.githubusercontent.com/43387803/151322239-4c5f9508-2c26-444a-9528-98a301a6134a.png" alt="azure data studio" width="40" height="40"/> </a>
+  <a href="https://www.tableau.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/tableau-software.svg" alt="tableau" width="40" height="40"/> </a>
+  <a href="https://www.alteryx.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/alteryx.svg" alt="alteryx" width="40" height="40"/> </a>
+  <a href="https://www.talend.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/talend.svg" alt="talend" width="40" height="40"/> </a>
+  <a href="https://azure.microsoft.com/en-us/products/data-factory/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original-wordmark.svg" alt="azure" width="40" height="40"/> </a>
+  <a href="https://www.idera.com/er-studio-data-architect-software" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/ER/Studio-1E1E1E?style=for-the-badge&logo=Idera&logoColor=white" alt="er studio"/> </a>
+</p>
+
+---
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=kmehul&label=Profile%20Visitors&color=blueviolet" alt="kmehul" />
 </p>
