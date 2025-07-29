@@ -47,7 +47,7 @@
 <table align="center">
   <tr>
     <td align="center" width="96">
-      <a href="" target="_blank" rel="noreferrer">
+      <a  target="_blank" rel="noreferrer">
         <img src="https://user-images.githubusercontent.com/25181517/183896055-e8833612-9226-427c-9263-35f156d4b248.png" width="60" height="60" alt="Azure SQL Databases" />
         <br><strong>Azure SQL Databases</strong>
       </a>
