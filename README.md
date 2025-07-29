@@ -22,34 +22,94 @@
 <h3 align="left">🛠️ Tech Stack</h3>
 
 <p align="center">
-  <strong>Languages & Databases:</strong>
-  <br/><br/>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-  &nbsp;
-  <img src="https://img.shields.io/badge/T--SQL-0078D4?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" alt="T-SQL"/>
-  &nbsp;
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"/>
-  &nbsp;
-  <img src="https://img.shields.io/badge/ArangoDB-333333?style=for-the-badge&logo=arangodb&logoColor=white" alt="ArangoDB"/>
-  &nbsp;
-  <img src="https://img.shields.io/badge/Azure_SQL-0078D4?style=for-the-badge&logo=azure-sql-database&logoColor=white" alt="Azure SQL"/>
+  <strong>Languages</strong>
 </p>
+<table align="center">
+  <tr>
+    <td align="center" width="96">
+      <a href="https://www.python.org" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="60" height="60" alt="Python" />
+        <br><strong>Python</strong>
+      </a>
+    </td>
+    <td align="center" width="96">
+      <a href="#-tech-stack">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/azuresqldatabase/azuresqldatabase-plain.svg" width="60" height="60" alt="SQL" />
+        <br><strong>SQL</strong>
+      </a>
+    </td>
+  </tr>
+</table>
 
 <p align="center">
-  <strong>BI, ETL & Data Tools:</strong>
-  <br/><br/>
-  <img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white" alt="Tableau"/>
-  &nbsp;
-  <img src="https://img.shields.io/badge/Azure_Data_Factory-0078D4?style=for-the-badge&logo=azure-data-factory&logoColor=white" alt="Azure Data Factory"/>
-  &nbsp;
-  <img src="https://img.shields.io/badge/Talend-FF6D70?style=for-the-badge&logo=talend&logoColor=white" alt="Talend"/>
-  &nbsp;
-  <img src="https://img.shields.io/badge/Alteryx-0078D4?style=for-the-badge&logo=alteryx&logoColor=white" alt="Alteryx"/>
-  &nbsp;
-  <img src="https://img.shields.io/badge/Azure_Data_Studio-0078D4?style=for-the-badge&logo=azure-data-studio&logoColor=white" alt="Azure Data Studio"/>
-  &nbsp;
-  <img src="https://img.shields.io/badge/ER/Studio-1E1E1E?style=for-the-badge" alt="ER/Studio"/>
+  <strong>Databases</strong>
 </p>
+<table align="center">
+  <tr>
+    <td align="center" width="96">
+      <a href="https://azure.microsoft.com/en-us/products/azure-sql/" target="_blank" rel="noreferrer">
+        <img src="https://user-images.githubusercontent.com/25181517/183896055-e8833612-9226-427c-9263-35f156d4b248.png" width="60" height="60" alt="Azure SQL" />
+        <br><strong>Azure SQL</strong>
+      </a>
+    </td>
+    <td align="center" width="96">
+      <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" width="60" height="60" alt="MySQL" />
+        <br><strong>MySQL</strong>
+      </a>
+    </td>
+    <td align="center" width="96">
+      <a href="https://www.arangodb.com/" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/arangodb/arangodb-original-wordmark.svg" width="60" height="60" alt="ArangoDB" />
+        <br><strong>ArangoDB</strong>
+      </a>
+    </td>
+    <td align="center" width="96">
+      <a href="https://learn.microsoft.com/en-us/sql/azure-data-studio/" target="_blank" rel="noreferrer">
+        <img src="https://user-images.githubusercontent.com/43387803/151322239-4c5f9508-2c26-444a-9528-98a301a6134a.png" width="60" height="60" alt="Azure Data Studio" />
+        <br><strong>Azure Data Studio</strong>
+      </a>
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  <strong>BI & Analytics</strong>
+</p>
+<table align="center">
+  <tr>
+    <td align="center" width="96">
+      <a href="https://www.tableau.com/" target="_blank" rel="noreferrer">
+        <img src="https://cdn.worldvectorlogo.com/logos/tableau-software.svg" width="55" height="55" alt="Tableau" />
+        <br><strong>Tableau</strong>
+      </a>
+    </td>
+    <td align="center" width="96">
+      <a href="https://www.alteryx.com/" target="_blank" rel="noreferrer">
+        <img src="https://cdn.worldvectorlogo.com/logos/alteryx.svg" width="55" height="55" alt="Alteryx" />
+        <br><strong>Alteryx</strong>
+      </a>
+    </td>
+    <td align="center" width="96">
+      <a href="https://www.talend.com/" target="_blank" rel="noreferrer">
+        <img src="https://cdn.worldvectorlogo.com/logos/talend.svg" width="55" height="55" alt="Talend" />
+        <br><strong>Talend</strong>
+      </a>
+    </td>
+    <td align="center" width="96">
+      <a href="https://www.idera.com/er-studio-data-architect-software" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/kmehul/kmehul/main/er_studio_logo.png" width="60" height="60" alt="E/R Studio" />
+        <br><strong>E/R Studio</strong>
+      </a>
+    </td>
+    <td align="center" width="96">
+      <a href="https://azure.microsoft.com/en-us/products/data-factory/" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg" width="55" height="55" alt="Azure Data Factory" />
+        <br><strong>Azure Data Factory</strong>
+      </a>
+    </td>
+  </tr>
+</table>
 
 ---
 
