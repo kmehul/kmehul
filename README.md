@@ -79,13 +79,13 @@
 <table align="center">
   <tr>
     <td align="center" width="96">
-      <a href="https://www.tableau.com/" target="_blank" rel="noreferrer">
+      <a  target="_blank" rel="noreferrer">
         <img src="https://cdn.worldvectorlogo.com/logos/tableau-software.svg" width="55" height="55" alt="Tableau" />
         <br><strong>Tableau</strong>
       </a>
     </td>
     <td align="center" width="96">
-      <a href="https://www.alteryx.com/" target="_blank" rel="noreferrer">
+      <a  target="_blank" rel="noreferrer">
         <img src="https://raw.githubusercontent.com/kmehul/kmehul/main/alteryx.png" width="55" height="55" alt="Alteryx" />
         <br><strong>Alteryx</strong>
       </a>
@@ -97,13 +97,13 @@
       </a>
     </td>
     <td align="center" width="96">
-      <a href="https://www.idera.com/er-studio-data-architect-software" target="_blank" rel="noreferrer">
+      <a  target="_blank" rel="noreferrer">
         <img src="https://raw.githubusercontent.com/kmehul/kmehul/main/er_studio_logo.png" width="60" height="60" alt="E/R Studio" />
         <br><strong>E/R Studio</strong>
       </a>
     </td>
     <td align="center" width="96">
-      <a href="https://azure.microsoft.com/en-us/products/data-factory/" target="_blank" rel="noreferrer">
+      <a  target="_blank" rel="noreferrer">
         <img src="https://raw.githubusercontent.com/kmehul/kmehul/main/adf.svg" width="55" height="55" alt="Azure Data Factory" />
         <br><strong>Azure Data Factory</strong>
       </a>
