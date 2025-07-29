@@ -86,13 +86,13 @@
     </td>
     <td align="center" width="96">
       <a href="https://www.alteryx.com/" target="_blank" rel="noreferrer">
-        <img src="https://cdn.worldvectorlogo.com/logos/alteryx.svg" width="55" height="55" alt="Alteryx" />
+        <img src="https://raw.githubusercontent.com/kmehul/kmehul/main/alteryx.png" width="55" height="55" alt="Alteryx" />
         <br><strong>Alteryx</strong>
       </a>
     </td>
     <td align="center" width="96">
       <a href="https://www.talend.com/" target="_blank" rel="noreferrer">
-        <img src="https://statics-dev.cloud.talend.com/@talend/common/images/favicon-logo-square.ico" width="55" height="55" alt="Talend" />
+        <img src="https://raw.githubusercontent.com/kmehul/kmehul/main/talend1.png" width="55" height="55" alt="Talend" />
         <br><strong>Talend</strong>
       </a>
     </td>
