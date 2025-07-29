@@ -60,13 +60,13 @@
     </td>
     <td align="center" width="96">
       <a  target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/arangodb/arangodb-original-wordmark.svg" width="60" height="60" alt="ArangoDB" />
+        <img src="https://raw.githubusercontent.com/kmehul/kmehul/main/arangodb.png" width="60" height="60" alt="ArangoDB" />
         <br><strong>ArangoDB</strong>
       </a>
     </td>
     <td align="center" width="96">
       <a  target="_blank" rel="noreferrer">
-        <img src="https://user-images.githubusercontent.com/43387803/151322239-4c5f9508-2c26-444a-9528-98a301a6134a.png" width="60" height="60" alt="Azure Data Studio" />
+        <img src="https://raw.githubusercontent.com/kmehul/kmehul/main/azure data studio.png" width="60" height="60" alt="Azure Data Studio" />
         <br><strong>Azure Data Studio</strong>
       </a>
     </td>
@@ -104,7 +104,7 @@
     </td>
     <td align="center" width="96">
       <a href="https://azure.microsoft.com/en-us/products/data-factory/" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg" width="55" height="55" alt="Azure Data Factory" />
+        <img src="https://raw.githubusercontent.com/kmehul/kmehul/main/adf.svg" width="55" height="55" alt="Azure Data Factory" />
         <br><strong>Azure Data Factory</strong>
       </a>
     </td>
