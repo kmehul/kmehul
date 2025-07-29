@@ -65,7 +65,7 @@
       </a>
     </td>
     <td align="center" width="96">
-      <a href="https://learn.microsoft.com/en-us/sql/azure-data-studio/" target="_blank" rel="noreferrer">
+      <a  target="_blank" rel="noreferrer">
         <img src="https://user-images.githubusercontent.com/43387803/151322239-4c5f9508-2c26-444a-9528-98a301a6134a.png" width="60" height="60" alt="Azure Data Studio" />
         <br><strong>Azure Data Studio</strong>
       </a>
