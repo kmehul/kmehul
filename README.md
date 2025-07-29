@@ -112,7 +112,3 @@
 </table>
 
 ---
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=kmehul&label=Profile%20Visitors&color=blueviolet" alt="kmehul" />
-</p>
