@@ -27,13 +27,13 @@
 <table align="center">
   <tr>
     <td align="center" width="96">
-      <a href="https://www.python.org" target="_blank" rel="noreferrer">
+      <a  target="_blank" rel="noreferrer">
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="60" height="60" alt="Python" />
         <br><strong>Python</strong>
       </a>
     </td>
     <td align="center" width="96">
-      <a href="#-tech-stack">
+      <a >
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/azuresqldatabase/azuresqldatabase-plain.svg" width="60" height="60" alt="SQL" />
         <br><strong>SQL</strong>
       </a>
@@ -53,13 +53,13 @@
       </a>
     </td>
     <td align="center" width="96">
-      <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
+      <a  target="_blank" rel="noreferrer">
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" width="60" height="60" alt="MySQL" />
         <br><strong>MySQL</strong>
       </a>
     </td>
     <td align="center" width="96">
-      <a href="https://www.arangodb.com/" target="_blank" rel="noreferrer">
+      <a  target="_blank" rel="noreferrer">
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/arangodb/arangodb-original-wordmark.svg" width="60" height="60" alt="ArangoDB" />
         <br><strong>ArangoDB</strong>
       </a>
