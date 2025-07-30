@@ -71,7 +71,7 @@
 <h3 align="center">🤝 Connect with Me</h3>
 <p align="center">
 Outside of data, I'm a passionate photographer. You can find my work on Unsplash.
-<br/><br/>
+<br/>
 <p align="center">
   <a href="https://unsplash.com/@the_nemesis" target="_blank"><img src="https://img.shields.io/badge/Unsplash-4A4A4A?style=plastic" alt="Unsplash"/></a>
 </p>
