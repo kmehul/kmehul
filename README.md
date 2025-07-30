@@ -13,7 +13,7 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/kmehul992/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=plastic" alt="LinkedIn"/></a>
   &nbsp;&nbsp;
-  <a href="mailto:kumar-mehul@outlook.com"><img src="https://img.shields.io/badge/Email-5A8AB8?style=plastic" alt="Email"/></a>
+  <a href="mailto:kumar-mehul@outlook.com"><img src="https://img.shields.io/badge/Email-708090?style=plastic" alt="Email"/></a>
 </p>
 
 ---
@@ -31,39 +31,39 @@
   <strong>Languages</strong>
 </p>
 <p align="center">
-    <img src="https://img.shields.io/badge/Python-6C757D?style=plastic" alt="Python"/>
+    <img src="https://img.shields.io/badge/Python-4B8BBE?style=plastic" alt="Python"/>
     &nbsp;&nbsp;&nbsp;&nbsp;
-    <img src="https://img.shields.io/badge/SQL-6C757D?style=plastic" alt="SQL"/>
+    <img src="https://img.shields.io/badge/SQL-C75F5F?style=plastic" alt="SQL"/>
     &nbsp;&nbsp;&nbsp;&nbsp;
-    <img src="https://img.shields.io/badge/T--SQL-6C757D?style=plastic" alt="T-SQL"/>
+    <img src="https://img.shields.io/badge/T--SQL-D98A61?style=plastic" alt="T-SQL"/>
 </p>
 
 <p align="center">
   <strong>Databases</strong>
 </p>
 <p align="center">
-    <img src="https://img.shields.io/badge/Azure_SQL_Databases-4A90E2?style=plastic" alt="Azure SQL Databases"/>
+    <img src="https://img.shields.io/badge/Azure_SQL_Databases-5DA9E9?style=plastic" alt="Azure SQL Databases"/>
     &nbsp;&nbsp;&nbsp;&nbsp;
-    <img src="https://img.shields.io/badge/MySQL-5A8AB8?style=plastic" alt="MySQL"/>
+    <img src="https://img.shields.io/badge/MySQL-68A063?style=plastic" alt="MySQL"/>
     &nbsp;&nbsp;&nbsp;&nbsp;
-    <img src="https://img.shields.io/badge/ArangoDB-3B5998?style=plastic" alt="ArangoDB"/>
+    <img src="https://img.shields.io/badge/ArangoDB-8A9A5B?style=plastic" alt="ArangoDB"/>
     &nbsp;&nbsp;&nbsp;&nbsp;
-    <img src="https://img.shields.io/badge/Azure_Data_Studio-81B2D8?style=plastic" alt="Azure Data Studio"/>
+    <img src="https://img.shields.io/badge/Azure_Data_Studio-737CA1?style=plastic" alt="Azure Data Studio"/>
 </p>
 
 <p align="center">
   <strong>BI & Analytics</strong>
 </p>
 <p align="center">
-    <img src="https://img.shields.io/badge/Tableau-A88A68?style=plastic" alt="Tableau"/>
+    <img src="https://img.shields.io/badge/Tableau-E97627?style=plastic" alt="Tableau"/>
     &nbsp;&nbsp;&nbsp;&nbsp;
-    <img src="https://img.shields.io/badge/Alteryx-4CAF50?style=plastic" alt="Alteryx"/>
+    <img src="https://img.shields.io/badge/Alteryx-3D85C6?style=plastic" alt="Alteryx"/>
     &nbsp;&nbsp;&nbsp;&nbsp;
-    <img src="https://img.shields.io/badge/Talend-7D8C8C?style=plastic" alt="Talend"/>
+    <img src="https://img.shields.io/badge/Talend-B47480?style=plastic" alt="Talend"/>
     &nbsp;&nbsp;&nbsp;&nbsp;
     <img src="https://img.shields.io/badge/E/R_Studio-5F737C?style=plastic" alt="E/R Studio"/>
     &nbsp;&nbsp;&nbsp;&nbsp;
-    <img src="https://img.shields.io/badge/Azure_Data_Factory-2E8B57?style=plastic" alt="Azure Data Factory"/>
+    <img src="https://img.shields.io/badge/Azure_Data_Factory-4A7C59?style=plastic" alt="Azure Data Factory"/>
 </p>
 
 ---
