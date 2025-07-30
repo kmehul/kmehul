@@ -18,14 +18,14 @@
 
 ---
 
-<h3 align="left">📊 GitHub Stats</h3>
+<h3 align="center">📊 GitHub Stats</h3>
 <p align="center">
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=kmehul&show_icons=true&locale=en&theme=tokyonight" alt="kmehul" />
 </p>
 
 ---
 
-<h3 align="left">🛠️ Tech Stack</h3>
+<h3 align="center">🛠️ Tech Stack</h3>
 
 <p align="center">
   <strong>Languages</strong>
@@ -68,8 +68,8 @@
 
 ---
 
-<h3 align="left">🤝 Connect with Me</h3>
-<p align="left">
+<h3 align="center">🤝 Connect with Me</h3>
+<p align="center">
 Outside of data, I'm a passionate photographer. You can find my work on Unsplash.
 <br/><br/>
 <p align="center">
