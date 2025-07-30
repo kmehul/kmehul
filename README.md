@@ -11,12 +11,12 @@
 - 🌱 &nbsp; I’m currently deepening my expertise in cloud data platforms and advanced analytics.
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/kmehul992/" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.linkedin.com/in/kmehul992/">
     <img src="https://custom-icon-badges.demolab.com/badge/LinkedIn-0A66C2?style=plastic&logo=linkedin-white&logoColor=fff" alt="LinkedIn"/>
   </a>
   &nbsp;&nbsp;
-  <a href="mailto:kumar-mehul@outlook.com" target="_blank" rel="noopener noreferrer">
-    <img src="https://custom-icon-badges.demolab.com/badge/Email-4169E1?style=plastic&logo=gmail-white&logoColor=fff" alt="Email"/>
+  <a href="mailto:kumar-mehul@outlook.com">
+    <img src="https://custom-icon-badges.demolab.com/badge/Email-4169E1?style=plastic&logo=microsoft-outlook-white&logoColor=fff" alt="Email"/>
   </a>
 </p>
 
