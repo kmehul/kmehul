@@ -1,13 +1,23 @@
 <h1 align="center">Hi there, I'm Kumar Mehul 👋</h1>
-<h3 align="center">A Data Professional passionate about building end-to-end data solutions.</h3>
 
 <p align="center">
-  I specialize in the full data lifecycle—from engineering robust ETL pipelines and designing data models to creating intuitive BI dashboards that drive business decisions. I'm leveraging my Master's in Information Systems from Northeastern University to solve complex problems with data.
+  A Data Professional passionate about building end-to-end data solutions.
 </p>
 
+---
+
+- 🎓 &nbsp; I'm leveraging my Master's in **Information Systems** from Northeastern University to solve complex problems with data.
+- 🔭 &nbsp; I specialize in the full data lifecycle—from engineering robust ETL pipelines and designing data models to creating intuitive BI dashboards that drive business decisions.
+- 🌱 &nbsp; I’m currently deepening my expertise in cloud data platforms and advanced analytics.
+- 📷 &nbsp; Outside of data, I'm a passionate photographer. You can find my work on Unsplash:
+<br/>
+<a href="https://unsplash.com/@the_nemesis" target="_blank"><img src="https://img.shields.io/badge/Unsplash-000000?style=plastic&logo=unsplash&logoColor=white"></a>
+
+<br/>
 <p align="center">
-  <a href="https://www.linkedin.com/in/kmehul992/" target="blank"><img align="center" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="kmehul" /></a>
-  <a href="mailto:kumar-mehul@outlook.com" target="blank"><img align="center" src="https://img.shields.io/badge/Email-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" alt="kmehul" /></a>
+  <a href="https://www.linkedin.com/in/kmehul992/" target="blank"><img align="center" src="https://img.shields.io/badge/LinkedIn-0077B5?style=plastic&logo=linkedin&logoColor=white" alt="kmehul" /></a>
+  &nbsp;&nbsp;
+  <a href="mailto:kumar-mehul@outlook.com" target="blank"><img align="center" src="https://img.shields.io/badge/Email-0078D4?style=plastic&logo=microsoft-outlook&logoColor=white" alt="kmehul" /></a>
 </p>
 
 ---
