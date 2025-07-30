@@ -1,13 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 120 120">
   <style>
-    .card { rx: 10; ry: 10; stroke: #e1e4e8; stroke-width: 1; }
+    .card { rx: 10; ry: 10; stroke: #e1e4e8; stroke-width: 1; fill: #fff; }
     .name { font: 600 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #24292e; }
     @media (prefers-color-scheme: dark) {
-      .card { fill: #24292e; stroke: #586069; }
+      .card { fill: #161B22; stroke: #586069; }
       .name { fill: #c9d1d9; }
     }
   </style>
   <rect class="card" x="1" y="1" width="118" height="118"/>
-  <image x="30" y="20" width="60" height="60" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"/>
+  <image x="30" y="20" width="60" height="60" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNNjQgMTQuNDVhNDkuNTUgNDkuNTUgMCAxIDAgNDkuNTUgNDkuNTVBNDkuNTUgNDkuNTUgMCAwIDAgNjQgMTQuNDV6TTg1LjM4IDc1LjJhMS44IDEuOCAwIDAgMS0yLjU0IDBsLTcuNjEtNy42MWEuMzIuMzIgMCAwIDAtLjQ4IDBsLTguNjcgOC42N2ExLjc5IDEuNzkgMCAwIDEgLTIuNTUgMGwtMTYtMTZBNzYgNzYgMCAwIDEgMzQuNjIgMzguN2wxNC4zMSAxNC4zMWExLjc5IDEuNzkgMCAwIDEgMCAyLjU0bC0xMS43IDExLjdhMS43OSAxLjc5IDAgMCAxLTIuNTQgMGwtOS4xNC05LjE0YTIuMDcgMi4wNyAwIDAgMSAwLTIuNjFsMy42OS0zLjY5YTM1Ljc1IDM1Ljc1IDAgMCAxIDM2LjY1IDM5LjVsLTguNjItOC42MmExLjc5IDEuNzkgMCAwIDEgMC0yLjU0bDExLjctMTEuN2ExLjc5IDEuNzkgMCAwIDEgMi41NCAwbDE2LjU3IDE2LjU2YTQ1LjM1IDQ1LjM1IDAgMCAxLTE3LjIyIDE3LjIyek03NS4yMiA0MC40NGwtMi4yMy0yLjIzYTEuNzkgMS43OSAwIDAgMC0yLjU0IDBsLTE2LjU3IDE2LjU2YTEuNzkgMS43OSAwIDAgMCAwIDIuNTRsMTEuNyAxMS43YTEuNzkgMS43OSAwIDAgMCAyLjU0IDBsOC42Mi04LjYyYTc0LjQyIDc0LjQyIDAgMCAwIDE3LjIyLTE3LjIybC0zLjY5LTMuNjlhMi4wNyAyLjA3IDAgMCAwLTIuNjEgMHoiIGZpbGw9IiMwMDZjOWUiLz48cGF0aCBkPSJNMTA0LjY1IDgwLjMzbC0xMi42NC0xMi42NEExLjc5IDEuNzkgMCAwIDAgOTAgNjYuOTFsLTE2LjU3IDE2LjU2YTEuNzkgMS43OSAwIDAgMCAwIDIuNTRsMTEuNyAxMS43YTEuNzkgMS43OSAwIDAgMCAyLjU0IDBsNy42MSA3LjYxYTEuNzcgMS43NyAwIDAgMCAyLjUzIDBsMTYtMTZhMS44IDEuOCAwIDAgMCAuMDUtMi41NHptLTU0LjUtMzMuM2wtNy4xOC03LjE4YTEuNzkgMS43OSAwIDAgMC0yLjU0IDBMMjIuMiA1OC4wOGExLjc5IDEuNzkgMCAwIDAgMCAyLjU0bDEyLjY0IDEyLjY0YTEuNzkgMS43OSAwIDAgMCAyLjUzIDBsMTYuNTctMTYuNTZhMS43OSAxLjc5IDAgMCAwIDAtMi41NEw0Mi44IDQ3LjM3YTEuNzkgMS43OSAwIDAgMC0yLjY1LS4zNHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4="/>
   <text x="60" y="100" text-anchor="middle" class="name">MySQL</text>
 </svg>
