@@ -1,13 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 120 120">
   <style>
-    .card { rx: 10; ry: 10; stroke: #e1e4e8; stroke-width: 1; }
+    .card { rx: 10; ry: 10; stroke: #e1e4e8; stroke-width: 1; fill: #fff; }
     .name { font: 600 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #24292e; }
     @media (prefers-color-scheme: dark) {
-      .card { fill: #24292e; stroke: #586069; }
+      .card { fill: #161B22; stroke: #586069; }
       .name { fill: #c9d1d9; }
     }
   </style>
   <rect class="card" x="1" y="1" width="118" height="118"/>
-  <image x="30" y="20" width="60" height="60" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"/>
+  <image x="30" y="20" width="60" height="60" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iY3VycmVudENvbG9yIj48cGF0aCBkPSJNMTIgMi4yODhjLTMuMjMgMC01Ljg0NyAyLjYxNi01Ljg0NyA1Ljg0N3YxLjE2OWMwIC42NDUtLjUyMyAxLjE2OS0xLjE2OSAxLjE2OUguNjQ1Qy4yODggMTAuNDc0IDAgMTAuNzYgMCAxMS4xMjd2MS4zNDhjMCAuMjQuMTUuNDUuMzY3LjUzMy4xNzEuMDY1IDEuMTE5LjQyMyAyLjQ5OC45MzUgMS4yMzItMS4yOTcgMy4xNDgtMi4xMzcgNS4zMDQtMi4xMzdzNC4wNzIgMS4xMSA1LjMwNCAyLjEzN2MxLjM3OC0uNTExIDIuMzI2LS44NyAyLjQ5OC0uOTM1LjIxNy0uMDgzLjM2Ny0uMjkzLjM2Ny0uNTMzdi0xLjM0OGMwLS4zNjYtLjI4OC0uNjUzLS42NDUtLjY1M2gtNC4zMzdjLS42NDUgMC0xLjE2OS0uNTIzLTEuMTY5LTEuMTY5VjguMTM1YzAtMy4yMy0yLjYxNy01Ljg0Ny01Ljg0Ny01Ljg0N3ptLTQuNjU0IDguMTE1YzAgLjY2LjUzNCAxLjE5NiAxLjE5NiAxLjE5NmgxLjc5M3YtMy41ODZoMy41ODZ2My41ODZoMS43OTNjLjY2IDAgMS4xOTYtLjUzNSAxLjE5Ni0xLjE5NiAwLS42Ni0uNTM2LTEuMTk2LTEuMTk2LTEuMTk2SDguNTQyYy0uNjYgMC0xLjE5Ni41MzYtMS4xOTYgMS4xOTZ6bS0xLjUxOCAzLjM0SDUuNDljLS42NDUgMC0xLjE2OS0uNTI0LTEuMTY5LTEuMTY5di0xLjE2OWgtMS4zNEMxLjgwOCAxMi40MDQgMCAxNC4yMTMgMCAxNi41NDRjMCAzLjIyOSAyLjYxOCA1Ljg0NyA1Ljg0NyA1Ljg0N2g0LjMyN2MuNjQ1IDAgMS4xNjktLjUyMyAxLjE2OS0xLjE2OXYtNS4xNDVjMC0uNjQ1LS4yNTQtMS4yMzItLjY3Ni0xLjY3Ni0uNDQ0LS40NjYtMS4wNDQtLjczMy0xLjY5Ni0uNzMzSDUuODQ3Yy0uMzIgMC0uNjM3LjEyNS0uODY2LjM0OC0uMjEuMjEtLjM0OC40OTUtLjM0OC44MDN2MS45NTJ6bTExLjQ5IDMuNDgxYzAtLjMyLS4xMzgtLjU5My0uMzQ4LS44MDMtLjIyOS0uMjIzLS41NDYtLjM0OC0uODY2LS4zNDhoLTIuNjExYy0uNjUyIDAtMS4yNTIuMjY3LTEuNjk2LjczMy0uNDIyLjQ0NC0uNjc2IDEuMDMtLjY3NiAxLjY3NnY1LjE0NWMwIC42NDUuNTI0IDEuMTY5IDEuMTY5IDEuMTY5aDQuMzI3YzMuMjMgMCA1Ljg0Ny0yLjYxOCA1Ljg0Ny01Ljg0NyAwLTIuMzMyLTEuODA4LTQuMTQtMy4xNzgtNC4xNGgtMS4zNHYxLjE2OWMwIC42NDUtLjUyNCAxLjE2OS0xLjE2OSAxLjE2OXptLTEwLjMgMS43OThWMTguNGgxLjY5N3YxLjY5N0g3LjMyN3ptOS4zNDYgMHYtMS42OTdoMS42OTd2MS42OTdoLTEuNjk3eiIgZmlsbD0iIzMzNjY5MSIvPjwvc3ZnPg=="/>
   <text x="60" y="100" text-anchor="middle" class="name">Python</text>
 </svg>
