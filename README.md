@@ -13,7 +13,7 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/kmehul992/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=plastic" alt="LinkedIn"/></a>
   &nbsp;&nbsp;
-  <a href="mailto:kumar-mehul@outlook.com"><img src="https://img.shields.io/badge/Email-4169E1?style=plastic" alt="Email"/></a>
+  <a href="mailto:kumar-mehul@outlook.com"><img src="https://img.shields.io/badge/Email-5A8AB8?style=plastic" alt="Email"/></a>
 </p>
 
 ---
