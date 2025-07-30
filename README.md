@@ -26,23 +26,23 @@
 </p>
 <p align="center">
     <img src="https://img.shields.io/badge/Python-3776AB?style=plastic" alt="Python"/>
-    &nbsp;
-    <img src="https://img.shields.io/badge/SQL-0078D4?style=plastic" alt="SQL"/>
-    &nbsp;
-    <img src="https://img.shields.io/badge/T--SQL-0078D4?style=plastic" alt="T-SQL"/>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://img.shields.io/badge/SQL-CC2927?style=plastic" alt="SQL"/>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://img.shields.io/badge/T--SQL-CC2927?style=plastic" alt="T-SQL"/>
 </p>
 
 <p align="center">
   <strong>Databases</strong>
 </p>
 <p align="center">
-    <img src="https://img.shields.io/badge/Azure_SQL_Databases-0078D4?style=plastic" alt="Azure SQL Databases"/>
-    &nbsp;
+    <img src="https://img.shields.io/badge/Azure_SQL_Databases-00BFFF?style=plastic" alt="Azure SQL Databases"/>
+    &nbsp;&nbsp;&nbsp;&nbsp;
     <img src="https://img.shields.io/badge/MySQL-4479A1?style=plastic" alt="MySQL"/>
-    &nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;
     <img src="https://img.shields.io/badge/ArangoDB-333333?style=plastic" alt="ArangoDB"/>
-    &nbsp;
-    <img src="https://img.shields.io/badge/Azure_Data_Studio-0078D4?style=plastic" alt="Azure Data Studio"/>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://img.shields.io/badge/Azure_Data_Studio-4B0082?style=plastic" alt="Azure Data Studio"/>
 </p>
 
 <p align="center">
@@ -50,14 +50,14 @@
 </p>
 <p align="center">
     <img src="https://img.shields.io/badge/Tableau-E97627?style=plastic" alt="Tableau"/>
-    &nbsp;
-    <img src="https://img.shields.io/badge/Alteryx-0078D4?style=plastic" alt="Alteryx"/>
-    &nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://img.shields.io/badge/Alteryx-006400?style=plastic" alt="Alteryx"/>
+    &nbsp;&nbsp;&nbsp;&nbsp;
     <img src="https://img.shields.io/badge/Talend-FF6D70?style=plastic" alt="Talend"/>
-    &nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;
     <img src="https://img.shields.io/badge/E/R_Studio-1E1E1E?style=plastic" alt="E/R Studio"/>
-    &nbsp;
-    <img src="https://img.shields.io/badge/Azure_Data_Factory-0078D4?style=plastic" alt="Azure Data Factory"/>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://img.shields.io/badge/Azure_Data_Factory-008B8B?style=plastic" alt="Azure Data Factory"/>
 </p>
 
 ---
