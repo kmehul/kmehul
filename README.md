@@ -25,39 +25,39 @@
   <strong>Languages</strong>
 </p>
 <p align="center">
-    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+    <img src="https://img.shields.io/badge/Python-3776AB?style=plastic" alt="Python"/>
     &nbsp;
-    <img src="https://img.shields.io/badge/SQL-0078D4?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" alt="SQL"/>
+    <img src="https://img.shields.io/badge/SQL-0078D4?style=plastic" alt="SQL"/>
     &nbsp;
-    <img src="https://img.shields.io/badge/T--SQL-0078D4?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" alt="T-SQL"/>
+    <img src="https://img.shields.io/badge/T--SQL-0078D4?style=plastic" alt="T-SQL"/>
 </p>
 
 <p align="center">
   <strong>Databases</strong>
 </p>
 <p align="center">
-    <img src="https://img.shields.io/badge/Azure_SQL_Databases-0078D4?style=for-the-badge&logo=azure-sql-database&logoColor=white" alt="Azure SQL Databases"/>
+    <img src="https://img.shields.io/badge/Azure_SQL_Databases-0078D4?style=plastic" alt="Azure SQL Databases"/>
     &nbsp;
-    <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"/>
+    <img src="https://img.shields.io/badge/MySQL-4479A1?style=plastic" alt="MySQL"/>
     &nbsp;
-    <img src="https://img.shields.io/badge/ArangoDB-333333?style=for-the-badge&logo=arangodb&logoColor=white" alt="ArangoDB"/>
+    <img src="https://img.shields.io/badge/ArangoDB-333333?style=plastic" alt="ArangoDB"/>
     &nbsp;
-    <img src="https://img.shields.io/badge/Azure_Data_Studio-0078D4?style=for-the-badge&logo=azure-data-studio&logoColor=white" alt="Azure Data Studio"/>
+    <img src="https://img.shields.io/badge/Azure_Data_Studio-0078D4?style=plastic" alt="Azure Data Studio"/>
 </p>
 
 <p align="center">
   <strong>BI & Analytics</strong>
 </p>
 <p align="center">
-    <img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white" alt="Tableau"/>
+    <img src="https://img.shields.io/badge/Tableau-E97627?style=plastic" alt="Tableau"/>
     &nbsp;
-    <img src="https://img.shields.io/badge/Alteryx-0078D4?style=for-the-badge&logo=alteryx&logoColor=white" alt="Alteryx"/>
+    <img src="https://img.shields.io/badge/Alteryx-0078D4?style=plastic" alt="Alteryx"/>
     &nbsp;
-    <img src="https.shields.io/badge/Talend-FF6D70?style=for-the-badge&logo=talend&logoColor=white" alt="Talend"/>
+    <img src="https://img.shields.io/badge/Talend-FF6D70?style=plastic" alt="Talend"/>
     &nbsp;
-    <img src="https://img.shields.io/badge/E/R_Studio-1E1E1E?style=for-the-badge" alt="E/R Studio"/>
+    <img src="https://img.shields.io/badge/E/R_Studio-1E1E1E?style=plastic" alt="E/R Studio"/>
     &nbsp;
-    <img src="https://img.shields.io/badge/Azure_Data_Factory-0078D4?style=for-the-badge&logo=azure-data-factory&logoColor=white" alt="Azure Data Factory"/>
+    <img src="https://img.shields.io/badge/Azure_Data_Factory-0078D4?style=plastic" alt="Azure Data Factory"/>
 </p>
 
 ---
