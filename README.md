@@ -11,13 +11,9 @@
 - 🌱 &nbsp; I’m currently deepening my expertise in cloud data platforms and advanced analytics.
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/kmehul992/" target="_blank" rel="noopener noreferrer">
-    <img src="https://custom-icon-badges.demolab.com/badge/LinkedIn-0A66C2?style=plastic&logo=linkedin-white&logoColor=fff" alt="LinkedIn"/>
-  </a>
+  <a href="https://www.linkedin.com/in/kmehul992/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=plastic" alt="LinkedIn"/></a>
   &nbsp;&nbsp;
-  <a href="mailto:kumar-mehul@outlook.com">
-    <img src="https://img.shields.io/badge/Email-4169E1?style=plastic&logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSJ3aGl0ZSIgcm9sZT0iaW1nIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHRpdGxlPk1pY3Jvc29mdCBPdXRsb29rPC90aXRsZT48cGF0aCBkPSJNMTQuMjMgNy42NDVjLjQ4Ni0uNDg2LjIwNS0xLjI5LS41MS0xLjQ2NGwtMi45MDMtLjcwNmMtLjQ5Ny0uMTItLjg2LjI0Mi0uNzQuNzRsLjcwNyAyLjkwM2MuMTc0LjcxNS45NzguOTk1IDEuNDY0LjUxNnptLTIuMjggMTIuMTk5bC0yLjQ5Ni0yLjQ5Ni0yLjU4IDIuNThBLjUxNC41MTQgMCAwMSYgMjAuMTM0VjMuODY2YS41MTQuNTE0IDAgMDEuMzczLS40OTRsMi41OCAyLjU4IDIuNDk3LTIuNDk3IDQuMTM4IDQuMTM4LTQuMTM5IDQuMTM5IDUuODkzIDUuODkzLTUuODk0IDUuODk0LTQuMTM4LTQuMTM4IDQuMTM5LTQuMTM5ek0xOS4zNTYgMy41MWEuNTE0LjUxNCAwIDAwLS43MjcgMEw2LjQ4IDE1ajúY1OGwtLjAwMi4wMDItMi45NjUtMi45NjVhLjUxNC41MTQgMCAwMC0uNzI3IDBMLjM3MyAxNS4xMWEuNTE0LjUxNCAwIDAwMCAuNzI3bDguMjQgOC4yNGEuNTE0LjUxNCAwIDAwLjcyNyAwTDIxLjU5NiA4LjQ5NWEuNTE0LjUxNCAwIDAwMC0uNzI3bC0yLjQxMi0yLjQxeiIvPjwvc3ZnPg==" alt="Email"/>
-  </a>
+  <a href="mailto:kumar-mehul@outlook.com"><img src="https://img.shields.io/badge/Email-4169E1?style=plastic" alt="Email"/></a>
 </p>
 
 ---
