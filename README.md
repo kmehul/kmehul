@@ -21,40 +21,44 @@
 
 <h3 align="left">🛠️ Tech Stack</h3>
 
-<table align="center" border="0" cellpadding="10" cellspacing="10">
-  <tr align="center">
-    <td colspan="5"><strong>Languages</strong></td>
-  </tr>
-  <tr align="center">
-    <td colspan="2"></td>
-    <td><img src="https://raw.githubusercontent.com/kmehul/kmehul/main/python-card.svg" alt="Python"/></td>
-    <td><img src="https://raw.githubusercontent.com/kmehul/kmehul/main/sql-card.svg" alt="SQL"/></td>
-    <td colspan="2"></td>
-  </tr>
-  
-  <tr align="center">
-    <td colspan="5"><strong>Databases</strong></td>
-  </tr>
-  <tr align="center">
-    <td></td>
-    <td><img src="https://raw.githubusercontent.com/kmehul/kmehul/main/azuresql-card.svg" alt="Azure SQL"/></td>
-    <td><img src="https://raw.githubusercontent.com/kmehul/kmehul/main/mysql-card.svg" alt="MySQL"/></td>
-    <td><img src="https://raw.githubusercontent.com/kmehul/kmehul/main/arangodb-card.svg" alt="ArangoDB"/></td>
-    <td><img src="https://raw.githubusercontent.com/kmehul/kmehul/main/azuredatastudio-card.svg" alt="Azure Data Studio"/></td>
-    <td></td>
-  </tr>
+<p align="center">
+  <strong>Languages</strong>
+</p>
+<p align="center">
+    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+    &nbsp;
+    <img src="https://img.shields.io/badge/SQL-0078D4?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" alt="SQL"/>
+    &nbsp;
+    <img src="https://img.shields.io/badge/T--SQL-0078D4?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" alt="T-SQL"/>
+</p>
 
-  <tr align="center">
-    <td colspan="5"><strong>BI & Analytics</strong></td>
-  </tr>
-  <tr align="center">
-    <td><img src="https://raw.githubusercontent.com/kmehul/kmehul/main/tableau-card.svg" alt="Tableau"/></td>
-    <td><img src="https://raw.githubusercontent.com/kmehul/kmehul/main/alteryx-card.svg" alt="Alteryx"/></td>
-    <td><img src="https://raw.githubusercontent.com/kmehul/kmehul/main/talend-card.svg" alt="Talend"/></td>
-    <td><img src="https://raw.githubusercontent.com/kmehul/kmehul/main/erstudio-card.svg" alt="E/R Studio"/></td>
-    <td><img src="https://raw.githubusercontent.com/kmehul/kmehul/main/adf-card.svg" alt="Azure Data Factory"/></td>
-  </tr>
-</table>
+<p align="center">
+  <strong>Databases</strong>
+</p>
+<p align="center">
+    <img src="https://img.shields.io/badge/Azure_SQL_Databases-0078D4?style=for-the-badge&logo=azure-sql-database&logoColor=white" alt="Azure SQL Databases"/>
+    &nbsp;
+    <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"/>
+    &nbsp;
+    <img src="https://img.shields.io/badge/ArangoDB-333333?style=for-the-badge&logo=arangodb&logoColor=white" alt="ArangoDB"/>
+    &nbsp;
+    <img src="https://img.shields.io/badge/Azure_Data_Studio-0078D4?style=for-the-badge&logo=azure-data-studio&logoColor=white" alt="Azure Data Studio"/>
+</p>
+
+<p align="center">
+  <strong>BI & Analytics</strong>
+</p>
+<p align="center">
+    <img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white" alt="Tableau"/>
+    &nbsp;
+    <img src="https://img.shields.io/badge/Alteryx-0078D4?style=for-the-badge&logo=alteryx&logoColor=white" alt="Alteryx"/>
+    &nbsp;
+    <img src="https.shields.io/badge/Talend-FF6D70?style=for-the-badge&logo=talend&logoColor=white" alt="Talend"/>
+    &nbsp;
+    <img src="https://img.shields.io/badge/E/R_Studio-1E1E1E?style=for-the-badge" alt="E/R Studio"/>
+    &nbsp;
+    <img src="https://img.shields.io/badge/Azure_Data_Factory-0078D4?style=for-the-badge&logo=azure-data-factory&logoColor=white" alt="Azure Data Factory"/>
+</p>
 
 ---
 
