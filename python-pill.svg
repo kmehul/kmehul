@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="30" viewBox="0 0 90 30">
+  <defs><linearGradient id="a" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient></defs>
+  <rect width="90" height="30" rx="6" fill="#3776AB"/>
+  <rect width="90" height="30" rx="6" fill="url(#a)"/>
+  <text x="45" y="19" font-family="Verdana,sans-serif" font-size="14" fill="#fff" text-anchor="middle">Python</text>
+</svg>
