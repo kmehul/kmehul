@@ -21,92 +21,70 @@
 
 <h3 align="left">🛠️ Tech Stack</h3>
 
-<p align="center">
-  <strong>Languages</strong>
-</p>
-<table align="center">
-  <tr>
-    <td align="center" width="96">
-      <a  target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="60" height="60" alt="Python" />
+<p align="center"><strong>Languages</strong></p>
+<table width="80%" align="center" border="0" cellpadding="10" cellspacing="10">
+<tr align="center">
+    <td width="96">
+        <img src="https://raw.githubusercontent.com/kmehul/kmehul/main/python.svg" width="60" height="60" alt="Python" />
         <br><strong>Python</strong>
-      </a>
     </td>
-    <td align="center" width="96">
-      <a >
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/azuresqldatabase/azuresqldatabase-plain.svg" width="60" height="60" alt="SQL" />
+    <td width="96">
+        <img src="https://raw.githubusercontent.com/kmehul/kmehul/main/sql.png" width="60" height="60" alt="SQL" />
         <br><strong>SQL</strong>
-      </a>
     </td>
-  </tr>
+</tr>
 </table>
 
-<p align="center">
-  <strong>Databases</strong>
-</p>
-<table align="center">
-  <tr>
-    <td align="center" width="96">
-      <a  target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/kmehul/kmehul/main/Azure SQL Database.svg" width="60" height="60" alt="Azure SQL Databases" />
-        <br><strong>Azure SQL Databases</strong>
-      </a>
+<p align="center"><strong>Databases</strong></p>
+<table width="80%" align="center" border="0" cellpadding="10" cellspacing="10">
+<tr align="center">
+    <td width="96">
+        <img src="https://raw.githubusercontent.com/kmehul/kmehul/main/Azure%20SQL%20Database.svg" width="60" height="60" alt="Azure SQL Databases" />
+        <br><strong>Azure SQL</strong>
     </td>
-    <td align="center" width="96">
-      <a  target="_blank" rel="noreferrer">
+    <td width="96">
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" width="60" height="60" alt="MySQL" />
         <br><strong>MySQL</strong>
-      </a>
     </td>
-    <td align="center" width="96">
-      <a  target="_blank" rel="noreferrer">
+    <td width="96">
         <img src="https://raw.githubusercontent.com/kmehul/kmehul/main/arangodb.png" width="60" height="60" alt="ArangoDB" />
         <br><strong>ArangoDB</strong>
-      </a>
     </td>
-    <td align="center" width="96">
-      <a  target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/kmehul/kmehul/main/azure data studio.png" width="60" height="60" alt="Azure Data Studio" />
+    <td width="96">
+        <img src="https://raw.githubusercontent.com/kmehul/kmehul/main/azure%20data%20studio.png" width="60" height="60" alt="Azure Data Studio" />
         <br><strong>Azure Data Studio</strong>
-      </a>
     </td>
-  </tr>
+</tr>
 </table>
 
-<p align="center">
-  <strong>BI & Analytics</strong>
-</p>
-<table align="center">
-  <tr>
-    <td align="center" width="96">
-      <a  target="_blank" rel="noreferrer">
-        <img src="https://cdn.worldvectorlogo.com/logos/tableau-software.svg" width="55" height="55" alt="Tableau" />
+<p align="center"><strong>BI & Analytics</strong></p>
+<table width="80%" align="center" border="0" cellpadding="10" cellspacing="10">
+<tr align="center">
+    <td width="96">
+        <img src="https://raw.githubusercontent.com/kmehul/kmehul/main/tableau-icon.svg" width="60" height="60" alt="Tableau" />
         <br><strong>Tableau</strong>
-      </a>
     </td>
-    <td align="center" width="96">
-      <a  target="_blank" rel="noreferrer">
+    <td width="96">
         <img src="https://raw.githubusercontent.com/kmehul/kmehul/main/alteryx.png" width="55" height="55" alt="Alteryx" />
         <br><strong>Alteryx</strong>
-      </a>
     </td>
-    <td align="center" width="96">
-      <a  target="_blank" rel="noreferrer">
+    <td width="96">
         <img src="https://raw.githubusercontent.com/kmehul/kmehul/main/talend.png" width="55" height="55" alt="Talend" />
         <br><strong>Talend</strong>
-      </a>
     </td>
-    <td align="center" width="96">
-      <a  target="_blank" rel="noreferrer">
+    <td width="96">
         <img src="https://raw.githubusercontent.com/kmehul/kmehul/main/er_studio_logo.png" width="60" height="60" alt="E/R Studio" />
         <br><strong>E/R Studio</strong>
-      </a>
     </td>
-    <td align="center" width="96">
-      <a  target="_blank" rel="noreferrer">
+    <td width="96">
         <img src="https://raw.githubusercontent.com/kmehul/kmehul/main/adf.svg" width="55" height="55" alt="Azure Data Factory" />
         <br><strong>Azure Data Factory</strong>
-      </a>
     </td>
-  </tr>
+</tr>
 </table>
+
+---
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=kmehul&label=Profile%20Visitors&color=blueviolet" alt="kmehul" />
+</p>
