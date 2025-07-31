@@ -9,12 +9,12 @@ jobs:
   update-readme:
     name: Update Readme with WakaTime Stats
     runs-on: ubuntu-latest
-    # This permissions block is the new addition
     permissions:
       contents: write
       
     steps:
-      - uses: anmol098/waka-readme-stats@master
+      # We are now using the official action: athul/waka-readme-stats
+      - uses: athul/waka-readme-stats@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
