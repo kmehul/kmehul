@@ -18,13 +18,6 @@
 
 ---
 
-<h3 align="center">📊 GitHub Stats</h3>
-<p align="center">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=kmehul&show_icons=true&locale=en&theme=tokyonight" alt="kmehul" />
-</p>
-
----
-
 <h3 align="center">🛠️ Tech Stack</h3>
 
 <p align="center">
@@ -65,10 +58,6 @@
     &nbsp;&nbsp;&nbsp;&nbsp;
     <img src="https://img.shields.io/badge/Azure_Data_Factory-4A7C59?style=plastic" alt="Azure Data Factory"/>
 </p>
-
----
-
-
 
 ---
 
