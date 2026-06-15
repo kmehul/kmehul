@@ -62,7 +62,7 @@ Analyzing ridership patterns across Jersey City stations to identify commuter vs
 
 Built a 12-table dimensional model from 90M+ records across 17 heterogeneous source files. Designed ETL pipelines in Talend, profiled and validated data in Alteryx, and built Tableau dashboards covering ratings distribution, revenue trends, genre popularity, and multi-region release performance.
 
-[View repo](https://github.com/kmehul)
+[View repo](https://github.com/kmehul/IMDB-Movie-Data-Analysis)
 
 ---
 
@@ -71,14 +71,12 @@ Built a 12-table dimensional model from 90M+ records across 17 heterogeneous sou
 
 Designed a 5-table star schema for Sonoma County food facility inspection data. Profiled and cleansed source data in Alteryx, loaded into Azure SQL via Talend, and built Tableau dashboards covering inspection trends, pass/fail analysis, violation category breakdowns, and a geographic risk heatmap.
 
-[View repo](https://github.com/kmehul)
+[View repo](https://github.com/kmehul/California-Food-Inspection-Analysis)
 
 ---
 
 ## Education
 
-**MS, Information Systems** &nbsp;·&nbsp; GPA 3.52
-Northeastern University, Boston &nbsp;·&nbsp; 2022-2024
+**MS, Information Systems** &nbsp;·&nbsp; GPA 3.52 &nbsp;·&nbsp; Northeastern University, Boston &nbsp;·&nbsp; 2022-2024
 
-**BTech, Information Technology**
-SRM Institute of Science and Technology, Chennai &nbsp;·&nbsp; 2016-2020
+**BTech, Information Technology** &nbsp;·&nbsp; SRM Institute of Science and Technology, Chennai &nbsp;·&nbsp; 2016-2020
