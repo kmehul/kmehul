@@ -1,4 +1,4 @@
-d<h1 align="center">Kumar Mehul</h1>
+<h1 align="center">Kumar Mehul</h1>
 
 <p align="center">
   Data Analyst &nbsp;·&nbsp; SQL, Python, Tableau, Power BI &nbsp;·&nbsp; MS Information Systems, Northeastern University
