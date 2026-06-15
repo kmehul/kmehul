@@ -81,43 +81,4 @@ Designed a 5-table star schema for Sonoma County food facility inspection data. 
 Northeastern University, Boston &nbsp;·&nbsp; 2022-2024
 
 **BTech, Information Technology**
-SRM Institute of Science and Technology, Chennai &nbsp;·&nbsp; 2016-2020![E/R Studio](https://img.shields.io/badge/E%2FR%20Studio-94C941?style=for-the-badge&logoColor=white)
-
----
-
-## Projects
-
-### CitiBike Jersey City - Urban Mobility Analysis *(in progress)*
-**PostgreSQL · Python · Tableau**
-
-Analyzing ridership patterns across Jersey City stations to identify commuter vs. leisure usage splits, peak demand windows, and station-level load distribution. SQL drafted with AI assistance; findings and validation done independently.
-
-*Repo link coming soon*
-
----
-
-### IMDB Movie Data Analysis &nbsp; `Apr 2024`
-**SQL · Alteryx · Talend · Tableau · Azure SQL · MySQL**
-
-Built a 12-table dimensional model from 90M+ records across 17 heterogeneous source files. Designed ETL pipelines in Talend, profiled and validated data in Alteryx, and built Tableau dashboards covering ratings distribution, revenue trends, genre popularity, and multi-region release performance.
-
-[View repo](https://github.com/kmehul)
-
----
-
-### California Food Inspection Analysis &nbsp; `Nov 2023`
-**SQL · Alteryx · Talend · Tableau · Azure SQL · MySQL · E/R Studio**
-
-Designed a 5-table star schema for Sonoma County food facility inspection data. Profiled and cleansed source data in Alteryx, loaded into Azure SQL via Talend, and built Tableau dashboards covering inspection trends, pass/fail analysis, violation category breakdowns, and a geographic risk heatmap.
-
-[View repo](https://github.com/kmehul)
-
----
-
-## Education
-
-**MS, Information Systems** &nbsp;·&nbsp; GPA 3.52
-Northeastern University, Boston &nbsp;·&nbsp; 2022-2024
-
-**BTech, Information Technology**
 SRM Institute of Science and Technology, Chennai &nbsp;·&nbsp; 2016-2020
