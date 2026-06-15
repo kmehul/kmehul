@@ -5,11 +5,11 @@
 </p>
 
 <p align="center">
-  <a href="https://linkedin.com/in/kmehul992"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=LinkedIn&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://linkedin.com/in/kmehul992"><img src="https://img.shields.io/badge/linkedin-%230A66C2.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   &nbsp;
-  <a href="mailto:kumar-mehul@outlook.com"><img src="https://img.shields.io/badge/Email-0078D4?style=for-the-badge&logo=maildotru&logoColor=white" alt="Email"/></a>
+  <a href="mailto:kumar-mehul@outlook.com"><img src="https://img.shields.io/badge/Email-%230078D4.svg?style=for-the-badge&logo=maildotru&logoColor=white" alt="Email"/></a>
   &nbsp;
-  <img src="https://img.shields.io/badge/Portfolio-coming%20soon-555555?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfolio coming soon"/>
+  <img src="https://img.shields.io/badge/Portfolio-coming%20soon-555555?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PGxpbmUgeDE9IjIiIHkxPSIxMiIgeDI9IjIyIiB5Mj0iMTIiLz48cGF0aCBkPSJNMTIgMmExNS4zIDE1LjMgMCAwIDEgNCAxMCAxNS4zIDE1LjMgMCAwIDEtNCAxMCAxNS4zIDE1LjMgMCAwIDEtNC0xMCAxNS4zIDE1LjMgMCAwIDEgNC0xMHoiLz48L3N2Zz4=" alt="Portfolio coming soon"/>
 </p>
 
 ---
