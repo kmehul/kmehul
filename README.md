@@ -1,77 +1,90 @@
-<h1 align="center">Hi there, I'm Kumar Mehul 👋</h1>
+<h1 align="center">Kumar Mehul</h1>
 
 <p align="center">
-  A Data Professional passionate about building end-to-end data solutions.
+  Data Analyst &nbsp;·&nbsp; SQL, Tableau, Power BI &nbsp;·&nbsp; MS Information Systems, Northeastern University
+</p>
+
+<p align="center">
+  <a href="https://linkedin.com/in/kmehul992">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  &nbsp;
+  <a href="mailto:kumar-mehul@outlook.com">
+    <img src="https://img.shields.io/badge/Email-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" alt="Email"/>
+  </a>
+  &nbsp;
+  <a href="#">
+    <img src="https://img.shields.io/badge/Portfolio-coming%20soon-555555?style=for-the-badge" alt="Portfolio coming soon"/>
+  </a>
 </p>
 
 ---
 
-- 🎓 &nbsp; I'm leveraging my Master's in **Information Systems** from Northeastern University to solve complex problems with data.
-- 🔭 &nbsp; I specialize in the full data lifecycle—from engineering robust ETL pipelines and designing data models to creating intuitive BI dashboards that drive business decisions.
-- 🌱 &nbsp; I’m currently deepening my expertise in cloud data platforms and advanced analytics.
+## About
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/kmehul992/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=plastic" alt="LinkedIn"/></a>
-  &nbsp;&nbsp;
-  <a href="mailto:kumar-mehul@outlook.com"><img src="https://img.shields.io/badge/Email-708090?style=plastic" alt="Email"/></a>
-</p>
+Data Analyst with an MS in Information Systems (Northeastern, 2024) and hands-on experience in SQL-based data pipelines, ETL workflows, and BI reporting. Background spans nonprofit data operations and academic projects across 90M+ records. Currently building a PostgreSQL and Tableau analysis of CitiBike ridership patterns in Jersey City.
 
 ---
 
-<h3 align="center">🛠️ Tech Stack</h3>
+## Tech stack
 
-<p align="center">
-  <strong>Languages</strong>
-</p>
-<p align="center">
-    <img src="https://img.shields.io/badge/Python-4B8BBE?style=plastic" alt="Python"/>
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img src="https://img.shields.io/badge/SQL-C75F5F?style=plastic" alt="SQL"/>
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img src="https://img.shields.io/badge/T--SQL-D98A61?style=plastic" alt="T-SQL"/>
-</p>
+**Languages & querying**
 
-<p align="center">
-  <strong>Databases</strong>
-</p>
-<p align="center">
-    <img src="https://img.shields.io/badge/Azure_SQL_Databases-5DA9E9?style=plastic" alt="Azure SQL Databases"/>
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img src="https://img.shields.io/badge/MySQL-68A063?style=plastic" alt="MySQL"/>
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img src="https://img.shields.io/badge/ArangoDB-8A9A5B?style=plastic" alt="ArangoDB"/>
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img src="https://img.shields.io/badge/Azure_Data_Studio-737CA1?style=plastic" alt="Azure Data Studio"/>
-</p>
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
-<p align="center">
-  <strong>BI & Analytics</strong>
-</p>
-<p align="center">
-    <img src="https://img.shields.io/badge/Tableau-E97627?style=plastic" alt="Tableau"/>
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img src="https://img.shields.io/badge/Alteryx-3D85C6?style=plastic" alt="Alteryx"/>
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img src="https://img.shields.io/badge/Talend-B47480?style=plastic" alt="Talend"/>
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img src="https://img.shields.io/badge/E/R_Studio-5F737C?style=plastic" alt="E/R Studio"/>
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <img src="https://img.shields.io/badge/Azure_Data_Factory-4A7C59?style=plastic" alt="Azure Data Factory"/>
-</p>
+**Databases**
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![Azure SQL](https://img.shields.io/badge/Azure%20SQL-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+
+**BI & visualization**
+
+![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+
+**Data preparation & modeling**
+
+![Alteryx](https://img.shields.io/badge/Alteryx-0078C0?style=for-the-badge&logoColor=white)
+![Talend](https://img.shields.io/badge/Talend-FF6D70?style=for-the-badge&logoColor=white)
+![E/R Studio](https://img.shields.io/badge/E%2FR%20Studio-94C941?style=for-the-badge&logoColor=white)
 
 ---
 
-<h3 align="center">🤝 Connect with Me</h3>
-<p align="center">
-Outside of data, I'm a passionate photographer. You can find my work on Unsplash.
-<br/>
-<p align="center">
-  <a href="https://unsplash.com/@the_nemesis" target="_blank"><img src="https://img.shields.io/badge/Unsplash-4A4A4A?style=plastic" alt="Unsplash"/></a>
-</p>
-</p>
+## Projects
+
+### CitiBike Jersey City - Urban Mobility Analysis *(in progress)*
+**PostgreSQL · Python · Tableau**
+
+Analyzing ridership patterns across Jersey City stations to identify commuter vs. leisure usage splits, peak demand windows, and station-level load distribution. SQL drafted with AI assistance; findings and validation done independently.
+
+*Repo link coming soon*
 
 ---
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=kmehul&label=Profile%20Visitors&color=blueviolet" alt="kmehul" />
-</p>
+### IMDB Movie Data Analysis &nbsp; `Apr 2024`
+**SQL · Alteryx · Talend · Tableau · Azure SQL · MySQL**
+
+Built a 12-table dimensional model from 90M+ records across 17 heterogeneous source files. Designed ETL pipelines in Talend, profiled and validated data in Alteryx, and built Tableau dashboards covering ratings distribution, revenue trends, genre popularity, and multi-region release performance.
+
+[View repo](https://github.com/kmehul)
+
+---
+
+### California Food Inspection Analysis &nbsp; `Nov 2023`
+**SQL · Alteryx · Talend · Tableau · Azure SQL · MySQL · E/R Studio**
+
+Designed a 5-table star schema for Sonoma County food facility inspection data. Profiled and cleansed source data in Alteryx, loaded into Azure SQL via Talend, and built Tableau dashboards covering inspection trends, pass/fail analysis, violation category breakdowns, and a geographic risk heatmap.
+
+[View repo](https://github.com/kmehul)
+
+---
+
+## Education
+
+**MS, Information Systems** &nbsp;·&nbsp; GPA 3.52
+Northeastern University, Boston &nbsp;·&nbsp; 2022-2024
+
+**BTech, Information Technology**
+SRM Institute of Science and Technology, Chennai &nbsp;·&nbsp; 2016-2020
