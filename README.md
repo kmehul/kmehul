@@ -77,8 +77,9 @@ Designed a 5-table star schema for Sonoma County food facility inspection data. 
 
 ## Education
  
-**Master of Science in Information Systems**<br>
-Northeastern University, Boston, USA &nbsp;·&nbsp; GPA: 3.52/4.0 &nbsp;·&nbsp; 2022-2024
- 
-**Bachelor of Technology in Information Technology**<br>
-SRM Institute of Science and Technology, Chennai, India &nbsp;·&nbsp; 77.38% &nbsp;·&nbsp; 2016-2020
+| | |
+|:--|--:|
+| **Master of Science in Information Systems** | 2022 - 2024 |
+| Northeastern University, Boston, USA \| GPA: 3.52/4.0 | |
+| **Bachelor of Technology in Information Technology** | 2016 - 2020 |
+| SRM Institute of Science and Technology, Chennai, India \| 77.38% | |
