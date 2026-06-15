@@ -5,11 +5,11 @@
 </p>
 
 <p align="center">
-  <a href="https://linkedin.com/in/kmehul992"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://linkedin.com/in/kmehul992"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=LinkedIn&logoColor=white" alt="LinkedIn"/></a>
   &nbsp;
   <a href="mailto:kumar-mehul@outlook.com"><img src="https://img.shields.io/badge/Email-0078D4?style=for-the-badge&logo=maildotru&logoColor=white" alt="Email"/></a>
   &nbsp;
-  <img src="https://img.shields.io/badge/Portfolio-coming%20soon-555555?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio coming soon"/>
+  <img src="https://img.shields.io/badge/Portfolio-coming%20soon-555555?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfolio coming soon"/>
 </p>
 
 ---
