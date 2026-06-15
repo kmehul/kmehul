@@ -1,4 +1,4 @@
-<h1 align="center">Kumar Mehul</h1>
+d<h1 align="center">Kumar Mehul</h1>
 
 <p align="center">
   Data Analyst &nbsp;·&nbsp; SQL, Python, Tableau, Power BI &nbsp;·&nbsp; MS Information Systems, Northeastern University
@@ -16,7 +16,7 @@
 
 ## About
 
-Data Analyst with an MS in Information Systems (Northeastern, 2024) and hands-on experience in SQL-based data pipelines, ETL workflows, and BI reporting. Background spans nonprofit data operations and academic projects across 90M+ records. Currently building a PostgreSQL and Tableau analysis of CitiBike ridership patterns in Jersey City.
+Data Analyst with an MS in Information Systems (Northeastern, 2024) and hands-on experience in ETL pipelines, data modeling, and BI reporting. Background spans nonprofit data operations and academic projects across 90M+ records. Currently building a PostgreSQL and Tableau analysis of CitiBike ridership patterns in Jersey City.
 
 ---
 
