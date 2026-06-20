@@ -53,7 +53,7 @@ Data Analyst with an MS in Information Systems (Northeastern, 2024) and hands-on
 
 Analyzing ridership patterns across Jersey City stations to identify commuter vs. leisure usage splits, peak demand windows, and station-level load distribution. SQL drafted with AI assistance; findings and validation done independently.
 
-*Repo link coming soon*
+[View repo](https://github.com/kmehul/citibike-jc-mobility-analysis)
 
 ---
 
