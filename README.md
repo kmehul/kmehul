@@ -48,7 +48,7 @@ Data Analyst with an MS in Information Systems (Northeastern, 2024) and hands-on
 
 ## Projects
 
-### CitiBike Jersey City - Last-Mile Mobility Analysis &nbsp; Jun 2026 - Jul 2026
+### CitiBike Jersey City - Last-Mile Mobility Analysis &nbsp; | Jun 2026 - Jul 2026
 **PostgreSQL · Python (pandas) · Tableau**
 
 Analyzed 94,689 CitiBike rides across 108 stations in Jersey City and Hoboken to map commuter vs. leisure demand splits, identify stations draining or accumulating bikes daily, and surface rebalancing opportunities. Built with an AI-assisted workflow - AI used as an analytical partner across SQL and Python, with all output held to the same verification standard as any other draft, catching and correcting real errors along the way.
