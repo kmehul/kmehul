@@ -16,7 +16,7 @@
 
 ## About
 
-Data Analyst with an MS in Information Systems (Northeastern, 2024) and hands-on experience in ETL pipelines, data modeling, and BI reporting. Background spans nonprofit data operations and academic projects across 90M+ records. Currently building a PostgreSQL and Tableau analysis of CitiBike ridership patterns in Jersey City.
+Data Analyst with an MS in Information Systems (Northeastern, 2024) and hands-on experience in ETL pipelines, data modeling, and BI reporting. Background spans nonprofit data operations and academic projects across 90M+ records. Most recent project: a PostgreSQL and Tableau analysis of CitiBike ridership patterns across 108 stations in Jersey City and Hoboken.
 
 ---
 
@@ -49,11 +49,11 @@ Data Analyst with an MS in Information Systems (Northeastern, 2024) and hands-on
 ## Projects
 
 ### CitiBike Jersey City - Urban Mobility Analysis *(in progress)*
-**PostgreSQL · Python · Tableau**
+**PostgreSQL · Python (pandas) · Tableau**
 
-Analyzing ridership patterns across Jersey City stations to identify commuter vs. leisure usage splits, peak demand windows, and station-level load distribution. SQL drafted with AI assistance; findings and validation done independently.
-
-[View repo](https://github.com/kmehul/citibike-jc-mobility-analysis)
+Analyzed 94,689 CitiBike rides across 108 stations in Jersey City and Hoboken to map commuter vs. leisure demand splits, identify stations draining or accumulating bikes daily, and surface rebalancing opportunities. Built with an AI-assisted workflow - AI used as an analytical partner across SQL and Python, with all output held to the same verification standard as any other draft, catching and correcting real errors along the way.
+ 
+[View repo](https://github.com/kmehul/citibike-jc-mobility-analysis) &nbsp;·&nbsp; [Live dashboard](https://public.tableau.com/shared/WW7ZSRM8C?:display_count=n&:origin=viz_share_link)
 
 ---
 
