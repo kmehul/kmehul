@@ -48,7 +48,7 @@ Data Analyst with an MS in Information Systems (Northeastern, 2024) and hands-on
 
 ## Projects
 
-### CitiBike Jersey City - Last-Mile Mobility Analysis
+### CitiBike Jersey City - Last-Mile Mobility Analysis &nbsp; `Jun 2026 - Jul 2026`
 **PostgreSQL · Python (pandas) · Tableau**
 
 Analyzed 94,689 CitiBike rides across 108 stations in Jersey City and Hoboken to map commuter vs. leisure demand splits, identify stations draining or accumulating bikes daily, and surface rebalancing opportunities. Built with an AI-assisted workflow - AI used as an analytical partner across SQL and Python, with all output held to the same verification standard as any other draft, catching and correcting real errors along the way.
@@ -57,7 +57,7 @@ Analyzed 94,689 CitiBike rides across 108 stations in Jersey City and Hoboken to
 
 ---
 
-### IMDB Movie Data Analysis &nbsp; `Apr 2024`
+### IMDB Movie Data Analysis &nbsp; `Dec 2023 - Apr 2024`
 **SQL · Alteryx · Talend · Tableau · Azure SQL · MySQL**
 
 Built a 12-table dimensional model from 90M+ records across 17 heterogeneous source files. Designed ETL pipelines in Talend, profiled and validated data in Alteryx, and built Tableau dashboards covering ratings distribution, revenue trends, genre popularity, and multi-region release performance.
@@ -66,7 +66,7 @@ Built a 12-table dimensional model from 90M+ records across 17 heterogeneous sou
 
 ---
 
-### California Food Inspection Analysis &nbsp; `Nov 2023`
+### California Food Inspection Analysis &nbsp; `Oct 2023 - Nov 2023`
 **SQL · Alteryx · Talend · Tableau · Azure SQL · MySQL · E/R Studio**
 
 Designed a 5-table star schema for Sonoma County food facility inspection data. Profiled and cleansed source data in Alteryx, loaded into Azure SQL via Talend, and built Tableau dashboards covering inspection trends, pass/fail analysis, violation category breakdowns, and a geographic risk heatmap.
@@ -78,7 +78,7 @@ Designed a 5-table star schema for Sonoma County food facility inspection data. 
 ## Education
  
 **Master of Science in Information Systems**<br>
-Northeastern University, Boston, USA | GPA: 3.52/4.0 | 2022-2024
+Northeastern University, Boston, USA | GPA: 3.52/4.0 | Sep 2022 - May 2024
  
 **Bachelor of Technology in Information Technology**<br>
-SRM Institute of Science and Technology, Chennai, India | 77.38% | 2016-2020
+SRM Institute of Science and Technology, Chennai, India | 77.38% | Jul 2016 - May 2020
