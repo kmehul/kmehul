@@ -9,7 +9,7 @@
   &nbsp;
   <a href="mailto:kumar-mehul@outlook.com"><img src="https://img.shields.io/badge/Email-0078D4?style=for-the-badge" alt="Email"/></a>
   &nbsp;
-  <img src="https://img.shields.io/badge/Portfolio-coming%20soon-555555?style=for-the-badge" alt="Portfolio coming soon"/>
+  <a href="https://kmehul.github.io"><img src="https://img.shields.io/badge/Portfolio-0071e3?style=for-the-badge" alt="Portfolio"/></a>
 </p>
 
 ---
