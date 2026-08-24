@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://linkedin.com/in/kmehul992"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge" alt="LinkedIn"/></a>
   &nbsp;
-  <a href="mailto:kumar-mehul@outlook.com"><img src="https://img.shields.io/badge/Email-0078D4?style=for-the-badge" alt="Email"/></a>
+  <a href="mailto:kumar-mehul_1@outlook.com"><img src="https://img.shields.io/badge/Email-0078D4?style=for-the-badge" alt="Email"/></a>
   &nbsp;
   <a href="https://kmehul.github.io"><img src="https://img.shields.io/badge/Portfolio-0071e3?style=for-the-badge" alt="Portfolio"/></a>
 </p>
