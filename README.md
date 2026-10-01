@@ -48,12 +48,21 @@
 </p>
 
 <p>
+  <a href="https://github.com/kmehul/IMDB-Movie-Data-Analysis"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-repo-half-dark.svg"><img alt="View repository" src="assets/btn-repo-half-light.svg" width="49%"></picture></a>
+  <a href="https://github.com/kmehul/California-Food-Inspection-Analysis"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-repo-half-dark.svg"><img alt="View repository" src="assets/btn-repo-half-light.svg" width="49%"></picture></a>
+</p>
+
+<p>
 <a href="https://github.com/kmehul/apple-music-release-tracker">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/tracker-dark.svg">
     <img alt="Side project, 100% vibe coded: Apple Music Release Tracker. Polls the iTunes API every 6 hours for 53 artists and sends a push and an email on new releases." src="assets/tracker-light.svg" width="100%">
   </picture>
 </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/kmehul/apple-music-release-tracker"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-repo-dark.svg"><img alt="View repository" src="assets/btn-repo-light.svg" height="40"></picture></a>
 </p>
 
 <p>

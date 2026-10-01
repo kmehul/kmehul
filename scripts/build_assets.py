@@ -123,9 +123,15 @@ def header(t):
 
 
 # ---------------------------------------------------------------- buttons
-def button(t, label, primary):
+def button(t, label, primary, canvas=None):
+    """A pill button. With `canvas`, the pill sits centred on a transparent strip that wide,
+    so it can be laid out at the same percentage width as a card and line up beneath it."""
     size, h = 15, 40
     w = round(len(label) * size * 0.54 + 48)
+    if canvas:
+        inner = button(t, label, primary)
+        body = inner[inner.index("<rect"):inner.index("</svg>")]
+        return svg(canvas, h, f'<g transform="translate({(canvas - w) / 2:.1f} 0)">{body}</g>', label)
     fill = t["blue"] if primary else t["chip2"]
     fg = "#ffffff" if primary else t["text"]
     body = (f'<rect width="{w}" height="{h}" rx="20" fill="{fill}"/>'
@@ -449,6 +455,7 @@ def main():
                                      ("Email", False, "email"), ("Live dashboard", True, "dashboard"),
                                      ("View repository", False, "repo")):
             files[f"btn-{slug}"] = button(t, label, primary)
+        files["btn-repo-half"] = button(t, "View repository", False, canvas=410)
         for name, content in files.items():
             (OUT / f"{name}-{theme}.svg").write_text(content)
     print("wrote", len(list(OUT.glob("*.svg"))), "files to", OUT)
