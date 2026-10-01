@@ -1,84 +1,79 @@
-<h1 align="center">Kumar Mehul</h1>
-
-<p align="center">
-  Data Analyst &nbsp;·&nbsp; SQL, Python, Tableau, Power BI &nbsp;·&nbsp; MS Information Systems, Northeastern University
+<p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
+  <img alt="Kumar Mehul, Data Analyst. SQL, Python, Tableau, Power BI." src="assets/header-light.svg" width="100%">
+</picture>
 </p>
 
 <p align="center">
-  <a href="https://linkedin.com/in/kmehul992"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge" alt="LinkedIn"/></a>
+  <a href="https://linkedin.com/in/kmehul992"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-linkedin-dark.svg"><img alt="LinkedIn" src="assets/btn-linkedin-light.svg" height="40"></picture></a>
   &nbsp;
-  <a href="mailto:kumar-mehul_1@outlook.com"><img src="https://img.shields.io/badge/Email-0078D4?style=for-the-badge" alt="Email"/></a>
+  <a href="https://kmehul.github.io"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-portfolio-dark.svg"><img alt="Portfolio" src="assets/btn-portfolio-light.svg" height="40"></picture></a>
   &nbsp;
-  <a href="https://kmehul.github.io"><img src="https://img.shields.io/badge/Portfolio-0071e3?style=for-the-badge" alt="Portfolio"/></a>
+  <a href="mailto:kumar-mehul_1@outlook.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-email-dark.svg"><img alt="Email" src="assets/btn-email-light.svg" height="40"></picture></a>
 </p>
 
----
+<p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/about-dark.svg">
+  <img alt="About me, as a SQL query result: Kumar Mehul, Data Analyst, based in India and open to relocation. MS Information Systems, Northeastern University. Stack: SQL, Python, Tableau, Power BI." src="assets/about-light.svg" width="100%">
+</picture>
+</p>
 
-## About
+<p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/experience-dark.svg">
+  <img alt="Experience: Data Analyst at Rebecca Everlene Trust Company, Oct 2024 to May 2025. About 8,000 foundation records audited, about 6,300 sorted into a 12-month grant pipeline, about 80% submission-ready before deadlines." src="assets/experience-light.svg" width="100%">
+</picture>
+</p>
 
-Data Analyst with an MS in Information Systems (Northeastern, 2024) and hands-on experience in ETL pipelines, data modeling, and BI reporting. Background spans nonprofit data operations and academic projects across 90M+ records. Most recent project: a PostgreSQL and Tableau analysis of CitiBike ridership patterns across 108 stations in Jersey City and Hoboken.
+<p>
+<a href="https://github.com/kmehul/citibike-jc-mobility-analysis">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/citibike-dark.svg">
+    <img alt="Featured project: Jersey City Last-Mile Mobility, a CitiBike analysis. 94,689 verified trips, 10 priority stations, 17.8% peak daily imbalance." src="assets/citibike-light.svg" width="100%">
+  </picture>
+</a>
+</p>
 
----
+<p align="center">
+  <a href="https://public.tableau.com/shared/WW7ZSRM8C?:display_count=n&:origin=viz_share_link"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-dashboard-dark.svg"><img alt="Live dashboard" src="assets/btn-dashboard-light.svg" height="40"></picture></a>
+  &nbsp;
+  <a href="https://github.com/kmehul/citibike-jc-mobility-analysis"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-repo-dark.svg"><img alt="View repository" src="assets/btn-repo-light.svg" height="40"></picture></a>
+</p>
 
-## Tech stack
+<p>
+  <a href="https://github.com/kmehul/IMDB-Movie-Data-Analysis"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/imdb-dark.svg"><img alt="IMDB Movie Data Analysis: about 1 million source records from 17 sources loaded into a 12-table warehouse of about 8.9 million rows on Azure SQL." src="assets/imdb-light.svg" width="49%"></picture></a>
+  <a href="https://github.com/kmehul/California-Food-Inspection-Analysis"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/food-dark.svg"><img alt="California Food Inspection Analysis: a 5-table star schema of Sonoma County food facility inspections." src="assets/food-light.svg" width="49%"></picture></a>
+</p>
 
-**Languages & querying**
+<p>
+<a href="https://github.com/kmehul/apple-music-release-tracker">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/tracker-dark.svg">
+    <img alt="Side project, 100% vibe coded: Apple Music Release Tracker. Polls the iTunes API every 6 hours for 53 artists and sends a push and an email on new releases." src="assets/tracker-light.svg" width="100%">
+  </picture>
+</a>
+</p>
 
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logoColor=white)
+<p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/toolkit-dark.svg">
+  <img alt="Toolkit: SQL, Python, pandas, matplotlib, seaborn, PostgreSQL, SQL Server, Azure SQL, MySQL, Tableau, Power BI, Alteryx, Talend, E/R Studio." src="assets/toolkit-light.svg" width="100%">
+</picture>
+</p>
 
-**Databases**
+<p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/education-dark.svg">
+  <img alt="Education: MS Information Systems, Northeastern University, 2022 to 2024. B.Tech Information Technology, SRM Institute of Science and Technology, 2016 to 2020." src="assets/education-light.svg" width="100%">
+</picture>
+</p>
 
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logoColor=white)
-![Azure SQL](https://img.shields.io/badge/Azure%20SQL-0078D4?style=for-the-badge&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logoColor=white)
-
-**BI & visualization**
-
-![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logoColor=white)
-![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logoColor=black)
-
-**Data preparation & modeling**
-
-![Alteryx](https://img.shields.io/badge/Alteryx-0078C0?style=for-the-badge&logoColor=white)
-![Talend](https://img.shields.io/badge/Talend-FF6D70?style=for-the-badge&logoColor=white)
-![E/R Studio](https://img.shields.io/badge/E%2FR%20Studio-94C941?style=for-the-badge&logoColor=white)
-
----
-
-## Projects
-
-### CitiBike Jersey City - Last-Mile Mobility Analysis &nbsp; | &nbsp; Jun 2026 - Jul 2026
-**PostgreSQL · Python (pandas) · Tableau**
-
-Analyzed 94,689 CitiBike rides across 108 stations in Jersey City and Hoboken to map commuter vs. leisure demand splits, identify stations draining or accumulating bikes daily, and surface rebalancing opportunities. Built with an AI-assisted workflow - AI used as an analytical partner across SQL and Python, with all output held to the same verification standard as any other draft, catching and correcting real errors along the way.
- 
-[View repo](https://github.com/kmehul/citibike-jc-mobility-analysis) &nbsp;·&nbsp; [Live dashboard](https://public.tableau.com/shared/WW7ZSRM8C?:display_count=n&:origin=viz_share_link)
-
----
-
-### IMDB Movie Data Analysis &nbsp; | &nbsp; Dec 2023 - Apr 2024
-**SQL · Alteryx · Talend · Tableau · Azure SQL · MySQL**
-
-Built a 12-table dimensional model from 90M+ records across 17 heterogeneous source files. Designed ETL pipelines in Talend, profiled and validated data in Alteryx, and built Tableau dashboards covering ratings distribution, revenue trends, genre popularity, and multi-region release performance.
-
-[View repo](https://github.com/kmehul/IMDB-Movie-Data-Analysis)
-
----
-
-### California Food Inspection Analysis &nbsp; | &nbsp; Oct 2023 - Nov 2023
-**SQL · Alteryx · Talend · Tableau · Azure SQL · MySQL · E/R Studio**
-
-Designed a 5-table star schema for Sonoma County food facility inspection data. Profiled and cleansed source data in Alteryx, loaded into Azure SQL via Talend, and built Tableau dashboards covering inspection trends, pass/fail analysis, violation category breakdowns, and a geographic risk heatmap.
-
-[View repo](https://github.com/kmehul/California-Food-Inspection-Analysis)
-
----
-
-## Education
- 
-**Master of Science in Information Systems**<br>
-Northeastern University, Boston, USA | GPA: 3.52/4.0 | Sep 2022 - May 2024
- 
-**Bachelor of Technology in Information Technology**<br>
-SRM Institute of Science and Technology, Chennai, India | 77.38% | Jul 2016 - May 2020
+<p align="center">
+  <a href="https://linkedin.com/in/kmehul992"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-linkedin-dark.svg"><img alt="LinkedIn" src="assets/btn-linkedin-light.svg" height="40"></picture></a>
+  &nbsp;
+  <a href="https://kmehul.github.io"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-portfolio-dark.svg"><img alt="Portfolio" src="assets/btn-portfolio-light.svg" height="40"></picture></a>
+  &nbsp;
+  <a href="mailto:kumar-mehul_1@outlook.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-email-dark.svg"><img alt="Email" src="assets/btn-email-light.svg" height="40"></picture></a>
+</p>
