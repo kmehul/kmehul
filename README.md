@@ -28,12 +28,10 @@
 </p>
 
 <p>
-<a href="https://github.com/kmehul/citibike-jc-mobility-analysis">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/citibike-dark.svg">
     <img alt="Featured project: Jersey City Last-Mile Mobility, a CitiBike analysis. 94,689 verified trips, 10 priority stations, 17.8% peak daily imbalance." src="assets/citibike-light.svg" width="100%">
   </picture>
-</a>
 </p>
 
 <p align="center">
@@ -43,8 +41,8 @@
 </p>
 
 <p>
-  <a href="https://github.com/kmehul/IMDB-Movie-Data-Analysis"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/imdb-dark.svg"><img alt="IMDB Movie Data Analysis: about 1 million source records from 17 sources loaded into a 12-table warehouse of about 8.9 million rows on Azure SQL." src="assets/imdb-light.svg" width="49%"></picture></a>
-  <a href="https://github.com/kmehul/California-Food-Inspection-Analysis"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/food-dark.svg"><img alt="California Food Inspection Analysis: a 5-table star schema of Sonoma County food facility inspections." src="assets/food-light.svg" width="49%"></picture></a>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/imdb-dark.svg"><img alt="IMDB Movie Data Analysis: about 1 million source records from 17 sources loaded into a 12-table warehouse of about 8.9 million rows on Azure SQL." src="assets/imdb-light.svg" width="49%"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/food-dark.svg"><img alt="California Food Inspection Analysis: a 5-table star schema of Sonoma County food facility inspections." src="assets/food-light.svg" width="49%"></picture>
 </p>
 
 <p>
@@ -53,12 +51,10 @@
 </p>
 
 <p>
-<a href="https://github.com/kmehul/apple-music-release-tracker">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/tracker-dark.svg">
     <img alt="Side project, 100% vibe coded: Apple Music Release Tracker. Polls the iTunes API every 6 hours for 53 artists and sends a push and an email on new releases." src="assets/tracker-light.svg" width="100%">
   </picture>
-</a>
 </p>
 
 <p align="center">
