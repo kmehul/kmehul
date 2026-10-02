@@ -484,10 +484,23 @@ def notification(t, x, y, w, app, head, body, delay):
             f'<text x="{x+62}" y="{y+49}" font-size="12" fill="{t["sub"]}">{escape(body)}</text></g>')
 
 
-def notifications(t, x, y, w, delay):
-    notes = [("ntfy", "New release", "New music from your list"),
-             ("Gmail", "Release alert", "Out now on Apple Music")]
-    return "".join(notification(t, x, y + i * 80, w, *n, delay + i * 0.3) for i, n in enumerate(notes)), 148
+CHECK_TIMES = ["00:17", "06:23", "12:11", "18:07"]  # the tracker's cron, in IST
+
+
+def email_alert(t, x, y, w, delay):
+    """The email a release triggers, above the four daily check times."""
+    out = [notification(t, x, y, w, "Gmail", "New release", "Out now on Apple Music", delay)]
+    py, ph = y + 80, 84
+    out.append(f'<rect x="{x}" y="{py}" width="{w}" height="{ph}" rx="16" fill="{t["chip"]}"{anim("a", delay + 0.2)}/>')
+    out.append(txt(x + 16, py + 26, "Checks daily, IST", 12.5, t["sub"], 500, delay + 0.25))
+    gap = 8
+    pw = (w - 32 - gap * (len(CHECK_TIMES) - 1)) / len(CHECK_TIMES)
+    for i, hhmm in enumerate(CHECK_TIMES):
+        px = x + 16 + i * (pw + gap)
+        out.append(f'<g{anim("a", delay + 0.3 + i * 0.06)}><rect x="{px:.1f}" y="{py+40}" width="{pw:.1f}" height="28" rx="14" '
+                   f'fill="{t["card"]}" stroke="{t["line"]}"/><text x="{px + pw/2:.1f}" y="{py+54}" font-size="12.5" '
+                   f'font-weight="600" class="m" fill="{t["text"]}" text-anchor="middle" dominant-baseline="central">{hhmm}</text></g>')
+    return "".join(out), 80 + ph
 
 
 # ---------------------------------------------------------------- the cards
@@ -563,16 +576,18 @@ def tracker(t, mobile):
     spec = dict(
         eyebrow="Side project", badge=True, title="Apple Music Release Tracker",
         subtitle="A self-hosted new-release notifier",
-        body=("Apple Music's new-release alerts kept missing drops, so this polls the iTunes API every 6 hours "
-              "and sends a phone push and an email the moment a release goes live."),
-        visual=notifications,
-        stats=[("53", "artists watched"), ("4,808", "releases logged"), ("0", "external packages")],
+        body=("Apple Music's new-release alerts kept missing drops, so this checks the iTunes API every 6 hours "
+              "and emails me the moment a release goes live, including drops from prolific artists that "
+              "Apple's 200-result cap used to hide."),
+        visual=email_alert,
+        # seen.json only grows, so a floor stays true as the tracker keeps running
+        stats=[("53", "artists watched"), ("4,800+", "releases logged"), ("0", "external packages")],
         note="Built entirely by prompting AI: I directed and tested it.", icon="sparkle",
-        tags=["Python", "GitHub Actions", "iTunes API", "ntfy"])
+        tags=["Python", "GitHub Actions", "iTunes API", "Gmail SMTP"])
     return content_card(t, mobile, spec,
-                        "Side project, 100% vibe coded: Apple Music Release Tracker. Polls the iTunes API every 6 hours "
-                        "for 53 artists and sends a push and an email on new releases. 4,808 releases logged, no "
-                        "external packages.", defs=VIBE_GRAD)
+                        "Side project, 100% vibe coded: Apple Music Release Tracker. Checks the iTunes API every 6 hours "
+                        "for 53 artists and emails new releases. Over 4,800 releases logged, no external packages.",
+                        defs=VIBE_GRAD)
 
 
 # ---------------------------------------------------------------- toolkit
@@ -680,8 +695,8 @@ ALT = {
     "citibike": "Featured project: Jersey City Last-Mile Mobility, a CitiBike analysis. 94,689 verified trips, "
                 "10 priority stations, 17.8% peak daily imbalance.",
     "imdb": PROJECTS["imdb"]["label"], "food": PROJECTS["food"]["label"],
-    "tracker": "Side project, 100% vibe coded: Apple Music Release Tracker. Polls the iTunes API every 6 hours "
-               "for 53 artists and sends a push and an email on new releases.",
+    "tracker": "Side project, 100% vibe coded: Apple Music Release Tracker. Checks the iTunes API every 6 hours "
+               "for 53 artists and emails new releases.",
     "toolkit": "Toolkit: " + ", ".join(n for _, it in TOOLS for n, _ in it) + ".",
     "education": "Education: MS Information Systems, Northeastern University, 2022 to 2024. B.Tech Information "
                  "Technology, SRM Institute of Science and Technology, 2016 to 2020.",
