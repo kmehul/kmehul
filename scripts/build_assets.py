@@ -99,15 +99,28 @@ def est(s, size, mono=False):
 
 
 def wrap(s, size, maxw, mono=False):
+    words = list(filter(None, s.split(" ")))  # not split(): that also breaks at no-break spaces
+    # A one-letter word ("I", "a") never ends a line: it travels with the word after it.
+    i = 0
+    while i < len(words) - 1:
+        if len(words[i]) == 1 and words[i].isalpha():
+            words[i:i + 2] = [words[i] + " " + words[i + 1]]
+        i += 1
     lines, cur = [], ""
-    for word in filter(None, s.split(" ")):  # not split(): that also breaks at no-break spaces
+    for word in words:
         trial = f"{cur} {word}".strip()
         if cur and est(trial, size, mono) > maxw:
             lines.append(cur)
             cur = word
         else:
             cur = trial
-    return lines + [cur] if cur else lines
+    lines = lines + [cur] if cur else lines
+    # No single-word last line: pull the previous line's last word down when it fits.
+    if len(lines) > 1 and " " not in lines[-1] and lines[-2].count(" ") >= 2:
+        head, moved = lines[-2].rsplit(" ", 1)
+        if est(f"{moved} {lines[-1]}", size, mono) <= maxw:
+            lines[-2], lines[-1] = head, f"{moved} {lines[-1]}"
+    return lines
 
 
 def anim(cls, delay):
