@@ -94,7 +94,7 @@
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/m/toolkit-dark.svg">
   <source media="(max-width: 600px)" srcset="assets/m/toolkit-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/toolkit-dark.svg">
-  <img alt="Toolkit: SQL, Python, pandas, matplotlib, seaborn, PostgreSQL, SQL Server, Azure SQL, MySQL, Tableau, Power BI, Alteryx, Talend, E/R Studio." src="assets/toolkit-light.svg" width="100%">
+  <img alt="Toolkit: SQL, Python, pandas, matplotlib, seaborn, PostgreSQL, SQL Server, Azure SQL, MySQL, Alteryx, Talend, E/R Studio, Tableau, Power BI." src="assets/toolkit-light.svg" width="100%">
 </picture>
 </p>
 

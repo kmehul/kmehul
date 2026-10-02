@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="125" height="40" viewBox="0 0 125 40" role="img" aria-label="Portfolio"><title>Portfolio</title><defs><style>
+<svg xmlns="http://www.w3.org/2000/svg" width="118" height="40" viewBox="0 0 118 40" role="img" aria-label="Portfolio"><title>Portfolio</title><defs><style>
 text{font-family:-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif}
 .m{font-family:ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Roboto Mono', monospace}
 .a{animation:up .7s cubic-bezier(.2,.8,.2,1) both}
@@ -16,4 +16,4 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI'
 @keyframes blink{0%{opacity:1}50%{opacity:0}}
 @keyframes cv{0%,99%{opacity:1}100%{opacity:0}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
-</style></defs><rect width="125" height="40" rx="20" fill="#21262d"/><text x="62.5" y="20.0" font-size="15" font-weight="600" fill="#f0f6fc" text-anchor="middle" dominant-baseline="central">Portfolio</text></svg>
+</style></defs><rect width="118" height="40" rx="20" fill="#21262d"/><text x="59.0" y="20.0" font-size="15" font-weight="600" fill="#f0f6fc" text-anchor="middle" dominant-baseline="central">Portfolio</text></svg>
