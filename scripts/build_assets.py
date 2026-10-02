@@ -585,11 +585,16 @@ TOOLS = [("Query & code", [("SQL", "#0090f7"), ("Python", "#3776ab"), ("pandas",
 
 
 def tool_chip(t, x, y, w, name, colr, delay):
-    """Pill with a coloured dot and a label, centred together as one line of text."""
+    """Pill with a coloured dot and a label, centred together as one line of text.
+
+    dominant-baseline is repeated on each tspan: Safari follows SVG 1.1, where it is not
+    inherited, so without this the tspans fall back to the alphabetic baseline and sit high.
+    """
+    c = 'dominant-baseline="central"'
     return (f'<g{anim("a", delay)}><rect x="{x:.1f}" y="{y}" width="{w:.1f}" height="34" rx="17" fill="{t["chip"]}"/>'
             f'<text x="{x + w/2:.1f}" y="{y+17}" font-size="13.5" font-weight="500" fill="{t["text"]}" '
-            f'text-anchor="middle" dominant-baseline="central"><tspan fill="{colr}" font-size="15">●</tspan>'
-            f'<tspan dx="7">{escape(name)}</tspan></text></g>')
+            f'text-anchor="middle" {c}><tspan fill="{colr}" font-size="15" {c}>●</tspan>'
+            f'<tspan dx="7" {c}>{escape(name)}</tspan></text></g>')
 
 
 def toolkit(t, mobile):
