@@ -81,7 +81,7 @@
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/m/tracker-dark.svg">
   <source media="(max-width: 600px)" srcset="assets/m/tracker-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/tracker-dark.svg">
-  <img alt="Side project, 100% vibe coded: Apple Music Release Tracker. Checks the iTunes API every 6 hours for 53 artists and emails new releases." src="assets/tracker-light.svg" width="100%">
+  <img alt="Side project, 100% vibe coded: Apple Music Release Tracker. Checks the iTunes API four times a day for 53 artists and emails new releases." src="assets/tracker-light.svg" width="100%">
 </picture>
 </p>
 

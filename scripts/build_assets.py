@@ -108,7 +108,7 @@ def _font_face(chars):
     opts = subset.Options()
     opts.flavor = "woff"
     opts.layout_features = ["kern", "liga", "calt", "tnum", "lnum"]
-    font = TTFont(FONT_FILE)
+    font = TTFont(FONT_FILE, recalcTimestamp=False)  # keep the file's timestamp so rebuilds are byte-identical
     sub = subset.Subsetter(opts)
     sub.populate(text=chars)
     sub.subset(font)
@@ -643,8 +643,8 @@ def tracker(t, mobile):
     spec = dict(
         eyebrow="Side project", badge=True, title="Apple Music Release Tracker",
         subtitle="A self-hosted new-release notifier",
-        body=("Apple Music's new-release alerts kept missing drops, so this checks the iTunes API every 6 hours "
-              "and emails me the moment a release goes live, including drops from prolific artists that "
+        body=("Apple Music's new-release alerts kept missing drops, so this checks the iTunes API four times a day "
+              "and emails me each new release, including drops from prolific artists that "
               "Apple's 200-result cap used to hide."),
         visual=email_alert,
         # seen.json only grows, so a floor stays true as the tracker keeps running
@@ -652,7 +652,7 @@ def tracker(t, mobile):
         note="Built entirely by prompting AI: I directed and tested it.",
         tags=["Python", "GitHub Actions", "iTunes API", "Gmail SMTP"])
     return content_card(t, mobile, spec,
-                        "Side project, 100% vibe coded: Apple Music Release Tracker. Checks the iTunes API every 6 hours "
+                        "Side project, 100% vibe coded: Apple Music Release Tracker. Checks the iTunes API four times a day "
                         "for 53 artists and emails new releases. Over 4,800 releases logged, no external packages.",
                         defs=VIBE_GRAD)
 
@@ -762,7 +762,7 @@ ALT = {
     "citibike": "Featured project: Jersey City Last-Mile Mobility, a CitiBike analysis. 94,689 verified trips, "
                 "10 priority stations, 17.8% peak daily imbalance.",
     "imdb": PROJECTS["imdb"]["label"], "food": PROJECTS["food"]["label"],
-    "tracker": "Side project, 100% vibe coded: Apple Music Release Tracker. Checks the iTunes API every 6 hours "
+    "tracker": "Side project, 100% vibe coded: Apple Music Release Tracker. Checks the iTunes API four times a day "
                "for 53 artists and emails new releases.",
     "toolkit": "Toolkit: " + ", ".join(n for _, it in TOOLS for n, _ in it) + ".",
     "education": "Education: MS Information Systems, Northeastern University, 2022 to 2024. B.Tech Information "
