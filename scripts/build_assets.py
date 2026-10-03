@@ -6,42 +6,61 @@ The README picks one with <picture> media queries, so phones get a narrow card d
 close to actual size instead of a shrunken desktop card. Both widths share one card
 template (see content_card), so the mobile card is the same design reflowed.
 
+Colours and type follow kmehul.github.io's Stripe design (css/stripe.css): Stripe's palette,
+squircle pills and quote-block notes, with Hanken Grotesk embedded in each SVG (see below).
+
 Safari notes that shape this file:
-- Safari lays out SVG text at its on-screen size, where the system font's letter spacing
-  is wider, so a heavily scaled-down card overflows. Hence the mobile layouts, and text
-  wrapping that assumes a wide font (SANS_EM).
+- Safari lays out SVG text at its on-screen size, so a heavily scaled-down card overflows.
+  Hence the mobile layouts, and wrapping measured with the real font at bold weight.
 - Safari rasterises gradient-filled text at low resolution, so it looks blurred. Gradient
   text is drawn instead as one solid colour per letter (grad_text), which stays sharp.
+- dominant-baseline is not inherited by <tspan> in Safari, so it is set on each one.
 
-Run from the repo root:  python3 scripts/build_assets.py
+Needs fontTools (pip install fonttools). Run from the repo root:
+    python3 scripts/build_assets.py
 Every figure below comes from the resume or from the linked project repos.
 """
+import base64
+import io
 import math
-from html import escape
+import re
+from functools import lru_cache
+from html import escape, unescape
 from pathlib import Path
+
+from fontTools import subset
+from fontTools.ttLib import TTFont
+from fontTools.varLib import instancer
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "assets"
+FONT_FILE = ROOT / "fonts" / "HankenGrotesk[wght].ttf"
 
-SANS = "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+SANS = "'HG', 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
 MONO = "ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Roboto Mono', monospace"
-GRAD = ("#0090f7", "#5c6cff", "#a94ef5")  # same gradient as kmehul.github.io
-
-# Width estimates used for wrapping: system fonts average ~0.5em per character, so these
-# leave headroom for Safari's letter spacing and for wider fallback fonts.
-SANS_EM, MONO_EM = 0.55, 0.62
+MONO_EM = 0.62  # monospace advance, with headroom (sans text is measured with the real font)
 
 DESKTOP_W, MOBILE_W = 840, 360
 MOBILE_QUERY = "(max-width: 600px)"
 
+# Colours: kmehul.github.io's Stripe palette (css/stripe.css, measured from stripe.com); dark
+# cards follow stripe.com's own dark sections. Every text colour passes WCAG AA on the surface
+# it sits on; "grad" is for gradient text (light stops all >= 4.6:1); "bars" is decorative only.
+# Chart pairs pass the dataviz validator: light #533afd/#eb6834 (the site's), dark #7389ff/#e8632f.
+RIBBON = ("#8b7bff", "#d36bff", "#ff5fae", "#ff8a3d", "#ffc233")  # the site's ribbon colours
 THEMES = {
-    "light": dict(card="#f5f5f7", stroke="none", text="#1d1d1f", sub="#6e6e73", line="#d2d2d7",
-                  blue="#0071e3", chip="#ffffff", chip2="#e8e8ed", tint="#e6f0fd",
-                  term="#1d1d1f", term_stroke="none"),
-    "dark": dict(card="#161b22", stroke="#30363d", text="#f0f6fc", sub="#8b949e", line="#30363d",
-                 blue="#2997ff", chip="#21262d", chip2="#21262d", tint="#0f2a4d",
-                 term="#0b0f14", term_stroke="#30363d"),
+    "light": dict(card="#f6f9fc", stroke="none", text="#061b31", sub="#5b6b83", line="#e5edf5",
+                  blue="#533afd", chip="#ffffff", chip2="#f2f0ff", chip2_fg="#533afd", tint="#f2f0ff",
+                  term="#0d1738", term_stroke="none", grad=("#533afd", "#7a3cf0", "#a23be8"), bars=RIBBON,
+                  member="#533afd", casual="#eb6834"),
+    "dark": dict(card="#0d1738", stroke="#182659", text="#ffffff", sub="#839bc8", line="#24346f",
+                 blue="#7389ff", chip="#122054", chip2="#182659", chip2_fg="#ffffff", tint="#2c2484",
+                 term="#0a1330", term_stroke="#182659", grad=("#a9b8ff", "#d36bff", "#ff5fae"), bars=RIBBON,
+                 member="#7389ff", casual="#e8632f"),
 }
+# Badge and fact-box fills carry white text, so they stay dark enough for 4.5:1.
+VIBE_STOPS = ("#533afd", "#a23be8")
+BOX_STOPS = ("#533afd", "#7a3cf0")
 
 # Animations only ever move content *in*: every element's resting state is its final,
 # visible state, and `both` fill applies the hidden start state during the delay.
@@ -67,23 +86,62 @@ text{font-family:%(sans)s}
 """ % {"sans": SANS, "mono": MONO}
 
 
+# ---------------------------------------------------------------- font: measuring and embedding
+# Hanken Grotesk is the site's type (its stand-in for Stripe's licensed Söhne). Images on
+# GitHub can't load web fonts, so each SVG embeds a subset of fonts/HankenGrotesk[wght].ttf
+# (SIL OFL, fonts/OFL.txt) holding only the characters it uses; the same file measures text.
+@lru_cache(maxsize=None)
+def _advances(weight):
+    font = instancer.instantiateVariableFont(TTFont(FONT_FILE), {"wght": weight})
+    cmap, hmtx, upm = font.getBestCmap(), font["hmtx"].metrics, font["head"].unitsPerEm
+    return {cp: hmtx[g][0] * 1000 / upm for cp, g in cmap.items()}
+
+
+def tw(s, size, weight=400):
+    """Rendered width in px. Kerning is ignored, which only ever overestimates."""
+    adv = _advances(weight)
+    return sum(adv.get(ord(c), adv.get(32, 250)) for c in s) * size / 1000
+
+
+@lru_cache(maxsize=None)
+def _font_face(chars):
+    opts = subset.Options()
+    opts.flavor = "woff"
+    opts.layout_features = ["kern", "liga", "calt", "tnum", "lnum"]
+    font = TTFont(FONT_FILE)
+    sub = subset.Subsetter(opts)
+    sub.populate(text=chars)
+    sub.subset(font)
+    buf = io.BytesIO()
+    font.save(buf)
+    return (f'@font-face{{font-family:"HG";src:url(data:font/woff;base64,{base64.b64encode(buf.getvalue()).decode()}) '
+            f'format("woff");font-weight:100 900}}')
+
+
 # ---------------------------------------------------------------- primitives
 def svg(w, h, body, label, defs=""):
+    chars = "".join(sorted(set(unescape("".join(re.findall(r">([^<>]+)<", body))) + " ")))
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h:.0f}" viewBox="0 0 {w} {h:.0f}" '
             f'role="img" aria-label="{escape(label)}"><title>{escape(label)}</title>'
-            f'<defs><style>{BASE_CSS}</style>{defs}</defs>{body}</svg>\n')
+            f'<defs><style>{_font_face(chars)}{BASE_CSS}</style>{defs}</defs>{body}</svg>\n')
 
 
-def grad_def(gid, x1, x2):
+def grad_def(gid, x1, x2, stops):
+    n = len(stops) - 1
     return (f'<linearGradient id="{gid}" gradientUnits="userSpaceOnUse" x1="{x1}" y1="0" x2="{x2}" y2="0">'
-            f'<stop offset="0" stop-color="{GRAD[0]}"/><stop offset=".5" stop-color="{GRAD[1]}"/>'
-            f'<stop offset="1" stop-color="{GRAD[2]}"/></linearGradient>')
+            + "".join(f'<stop offset="{i / n:.2f}" stop-color="{c}"/>' for i, c in enumerate(stops))
+            + '</linearGradient>')
 
 
-def grad_color(p):
-    """Colour at position p (0..1) along the site gradient."""
+def diag_grad(gid, stops):
+    return (f'<linearGradient id="{gid}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{stops[0]}"/>'
+            f'<stop offset="1" stop-color="{stops[1]}"/></linearGradient>')
+
+
+def grad_color(p, stops):
+    """Colour at position p (0..1) along a three-stop gradient."""
     p = min(max(p, 0.0), 1.0)
-    a, b, f = (GRAD[0], GRAD[1], p * 2) if p <= 0.5 else (GRAD[1], GRAD[2], (p - 0.5) * 2)
+    a, b, f = (stops[0], stops[1], p * 2) if p <= 0.5 else (stops[1], stops[2], (p - 0.5) * 2)
     ca = [int(a[i:i + 2], 16) for i in (1, 3, 5)]
     cb = [int(b[i:i + 2], 16) for i in (1, 3, 5)]
     return "#" + "".join(f"{round(x + (y - x) * f):02x}" for x, y in zip(ca, cb))
@@ -95,7 +153,8 @@ def card(t, w, h):
 
 
 def est(s, size, mono=False):
-    return len(s) * size * (MONO_EM if mono else SANS_EM)
+    """Width for wrapping: real Hanken Grotesk advances at bold weight, the widest used."""
+    return len(s) * size * MONO_EM if mono else tw(s, size, 700) * 1.02
 
 
 def wrap(s, size, maxw, mono=False):
@@ -132,7 +191,7 @@ def txt(x, y, s, size, fill, weight=400, delay=0.0, anchor="start", extra="", cl
             f'text-anchor="{anchor}"{anim(cls, delay)}{extra}>{escape(s)}</text>')
 
 
-def grad_text(x, y, s, size, weight, p0, p1, delay, extra=""):
+def grad_text(x, y, s, size, weight, p0, p1, delay, stops, extra=""):
     """Gradient-looking text that stays sharp in Safari: one solid colour per letter."""
     groups = []
     for ch in s:
@@ -141,7 +200,7 @@ def grad_text(x, y, s, size, weight, p0, p1, delay, extra=""):
         else:
             groups.append(ch)
     n = max(len(groups) - 1, 1)
-    spans = "".join(f'<tspan fill="{grad_color(p0 + (p1 - p0) * i / n)}">{escape(g)}</tspan>'
+    spans = "".join(f'<tspan fill="{grad_color(p0 + (p1 - p0) * i / n, stops)}">{escape(g)}</tspan>'
                     for i, g in enumerate(groups))
     return (f'<text x="{x:.1f}" y="{y:.1f}" font-size="{size}" font-weight="{weight}" xml:space="preserve"'
             f'{anim("a", delay)}{extra}>{spans}</text>')
@@ -171,7 +230,7 @@ def chips(t, x, y, names, delay, maxw, size=13):
         if cx > x and cx + w > x + maxw:
             cx, cy = x, cy + h + 8
         out.append(f'<g{anim("a", delay + i*0.05)}><rect x="{cx:.1f}" y="{cy}" width="{w:.0f}" height="{h}" '
-                   f'rx="{h/2}" fill="{t["chip"]}"/><text x="{cx + w/2:.1f}" y="{cy + h/2}" font-size="{size}" '
+                   f'rx="6" fill="{t["chip"]}"/><text x="{cx + w/2:.1f}" y="{cy + h/2}" font-size="{size}" '
                    f'font-weight="500" fill="{t["text"]}" text-anchor="middle" dominant-baseline="central">{escape(n)}</text></g>')
         cx += w + 8
     return "".join(out), cy + h
@@ -196,7 +255,7 @@ def header(t, mobile):
         b = [card(t, W, H)]
         b.append(eyebrow(t, 24, 46, "Hello, I'm", 0.1))
         b.append(txt(22, 94, "Kumar Mehul", 40, t["text"], 700, 0.2, extra=' letter-spacing="-1"'))
-        b.append(grad_text(23, 132, "Data Analyst", 30, 700, 0, 1, 0.3, ' letter-spacing="-0.5"'))
+        b.append(grad_text(23, 132, "Data Analyst", 30, 700, 0, 1, 0.3, t["grad"], ' letter-spacing="-0.5"'))
         s, last = para(24, 166, "I turn messy data into decisions people trust.", 15, t["sub"], 312, 21, 0.4)
         b.append(s)
         b.append(txt(24, last + 28, "SQL · Python · Tableau · Power BI", 13, t["sub"], 500, 0.5))
@@ -207,7 +266,7 @@ def header(t, mobile):
         b = [card(t, W, H)]
         b.append(eyebrow(t, 56, 104, "Hello, I'm", 0.1))
         b.append(txt(54, 164, "Kumar Mehul", 60, t["text"], 700, 0.2, extra=' letter-spacing="-1.5"'))
-        b.append(grad_text(55, 216, "Data Analyst", 42, 700, 0, 1, 0.32, ' letter-spacing="-0.8"'))
+        b.append(grad_text(55, 216, "Data Analyst", 42, 700, 0, 1, 0.32, t["grad"], ' letter-spacing="-0.8"'))
         b.append(txt(56, 256, "I turn messy data into decisions people trust.", 16, t["sub"], 400, 0.45))
         b.append(txt(56, 284, "SQL  ·  Python  ·  Tableau  ·  Power BI", 15, t["sub"], 500, 0.55))
         grid = (500, 30, 320, 270)
@@ -229,9 +288,9 @@ def header(t, mobile):
     b.append(f'<path d="{d}" fill="none" stroke="{t["text"]}" stroke-width="2.5" stroke-linejoin="round" '
              f'stroke-linecap="round" {draw_attrs(length, 1.2)}/>')
     ex, ey = pts[-1]
-    b.append(f'<g{anim("f", 2.5)}><circle cx="{ex}" cy="{ey:.1f}" r="5" fill="{GRAD[2]}" class="pulse"/>'
-             f'<circle cx="{ex}" cy="{ey:.1f}" r="5.5" fill="{GRAD[2]}" stroke="{t["card"]}" stroke-width="2"/></g>')
-    defs = (grad_def("bg", x0, x_end) +
+    b.append(f'<g{anim("f", 2.5)}><circle cx="{ex}" cy="{ey:.1f}" r="5" fill="{t["bars"][2]}" class="pulse"/>'
+             f'<circle cx="{ex}" cy="{ey:.1f}" r="5.5" fill="{t["bars"][2]}" stroke="{t["card"]}" stroke-width="2"/></g>')
+    defs = (grad_def("bg", x0, x_end, t["bars"]) +
             f'<pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.1" fill="{t["line"]}"/></pattern>')
     return svg(W, H, "".join(b), "Kumar Mehul, Data Analyst. SQL, Python, Tableau, Power BI.", defs=defs)
 
@@ -241,14 +300,14 @@ def button(t, label, primary):
     size, h = 15, 40
     w = round(est(label, size) + 44)
     fill = t["blue"] if primary else t["chip2"]
-    fg = "#ffffff" if primary else t["text"]
-    body = (f'<rect width="{w}" height="{h}" rx="20" fill="{fill}"/>'
+    fg = "#ffffff" if primary else t["chip2_fg"]
+    body = (f'<rect width="{w}" height="{h}" rx="9" fill="{fill}"/>'
             f'<text x="{w/2}" y="{h/2}" font-size="{size}" font-weight="600" fill="{fg}" text-anchor="middle" dominant-baseline="central">{escape(label)}</text>')
     return svg(w, h, body, label)
 
 
 # ---------------------------------------------------------------- terminal
-KW, ID, STR, PUN, PROMPT, KEY, VAL, DIM = "#ff7b72", "#d2a8ff", "#a5d6ff", "#e6edf3", "#7ee787", "#79c0ff", "#e6edf3", "#6e7681"
+KW, ID, STR, PUN, PROMPT, KEY, VAL, DIM = "#ff8ac2", "#a9b8ff", "#ffc233", "#ffffff", "#7389ff", "#a9b8ff", "#ffffff", "#839bc8"
 RECORD = [
     ("name", "Kumar Mehul"),
     ("role", "Data Analyst"),
@@ -358,35 +417,30 @@ def stat_strip(t, x, y, w, stats, delay):
         cx = x + i * colw
         if i:
             out.append(f'<line x1="{cx:.1f}" x2="{cx:.1f}" y1="{y+16}" y2="{y+h-16}" stroke="{t["line"]}"{anim("f", delay)}/>')
-        out.append(grad_text(cx + inset, y + 38, figure, num, 700, *band(i, n), delay + 0.05 + i * 0.06, ' letter-spacing="-0.5"'))
+        out.append(grad_text(cx + inset, y + 38, figure, num, 700, *band(i, n), delay + 0.05 + i * 0.06, t["grad"], ' letter-spacing="-0.5"'))
         out += [txt(cx + inset, y + 60 + j * 16, s, 12.5, t["sub"], 400, delay + 0.05 + i * 0.06) for j, s in enumerate(lab)]
     return "".join(out), y + h
 
 
-def callout(t, x, y, w, s, delay, icon="check"):
-    """Tinted one-line-or-more note with a round icon. Returns (svg, bottom edge)."""
-    lines = wrap(s, 13, w - 58)
-    h = 20 + 18 * len(lines)
-    if icon == "check":
-        glyph = f'<path d="M{x+16} {y+19.2} l2.8 2.8 l5-5.4" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>'
-    else:  # sparkle
-        cx, cy = x + 20, y + 19
-        glyph = (f'<path d="M{cx} {cy-5} Q{cx+1} {cy-1} {cx+5} {cy} Q{cx+1} {cy+1} {cx} {cy+5} '
-                 f'Q{cx-1} {cy+1} {cx-5} {cy} Q{cx-1} {cy-1} {cx} {cy-5}Z" fill="#fff"/>')
-    out = [f'<g{anim("a", delay)}><rect x="{x}" y="{y}" width="{w}" height="{h}" rx="12" fill="{t["tint"]}"/>',
-           f'<circle cx="{x+20}" cy="{y+19}" r="9" fill="{t["blue"]}"/>', glyph]
-    out += [f'<text x="{x+40}" y="{y+23.5+i*18}" font-size="13" fill="{t["text"]}">{escape(l)}</text>' for i, l in enumerate(lines)]
+def callout(t, x, y, w, s, delay):
+    """A quote block: tinted panel with a 3px blurple rule on the left. Returns (svg, bottom edge)."""
+    lines = wrap(s, 13.5, w - 44)
+    h = 30 + 20 * (len(lines) - 1) + 14
+    path = f'M{x} {y}H{x + w - 10}a10 10 0 0 1 10 10V{y + h - 10}a10 10 0 0 1 -10 10H{x}Z'
+    out = [f'<g{anim("a", delay)}><path d="{path}" fill="{t["tint"]}"/>',
+           f'<rect x="{x}" y="{y}" width="3" height="{h}" fill="{t["blue"]}"/>']
+    out += [f'<text x="{x + 22}" y="{y + 26 + i * 20}" font-size="13.5" fill="{t["text"]}">{escape(l)}</text>'
+            for i, l in enumerate(lines)]
     return "".join(out) + "</g>", y + h
 
 
 def vibe_badge(x, y, delay):
-    return (f'<g{anim("a", delay)}><rect x="{x}" y="{y}" width="140" height="24" rx="12" fill="url(#vg)"/>'
+    return (f'<g{anim("a", delay)}><rect x="{x}" y="{y}" width="140" height="24" rx="6" fill="url(#vg)"/>'
             f'<text x="{x+70}" y="{y+12}" font-size="11" font-weight="700" fill="#fff" text-anchor="middle" '
             f'letter-spacing="0.6" dominant-baseline="central">100% VIBE CODED</text></g>')
 
 
-VIBE_GRAD = (f'<linearGradient id="vg" x1="0" y1="0" x2="1" y2="1">'
-             f'<stop offset="0" stop-color="#fa2d48"/><stop offset="1" stop-color="{GRAD[2]}"/></linearGradient>')
+VIBE_GRAD = diag_grad("vg", VIBE_STOPS)
 
 
 def label_row(t, W, P, y, left, right=None, badge=False):
@@ -419,7 +473,7 @@ def content_card(t, mobile, spec, label, defs=""):
             y += 22 + vh
     s, y = stat_strip(t, P, y + 24, inner, spec["stats"], 0.45); b.append(s)
     if spec.get("note"):
-        s, y = callout(t, P, y + 14, inner, spec["note"], 0.6, spec.get("icon", "check")); b.append(s)
+        s, y = callout(t, P, y + 14, inner, spec["note"], 0.6); b.append(s)
     if spec.get("tags"):
         s, y = chips(t, P, y + 20, spec["tags"], 0.7, inner); b.append(s)
     H = y + (24 if mobile else 36)
@@ -438,7 +492,7 @@ def ride_panel(t, px, py, pw, delay):
     b[0] = f'<rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="16" fill="{t["chip"]}"{anim("a", delay)}/>'
     oy = py + extra
     scale = (pw - 40 - 64) / 15
-    for i, (who, mins, col) in enumerate((("Member", 8, GRAD[0]), ("Casual", 15, GRAD[2]))):
+    for i, (who, mins, col) in enumerate((("Member", 8, t["member"]), ("Casual", 15, t["casual"]))):
         ly = oy + 90 + i * 50
         b.append(txt(px + 20, ly, who, 13, t["sub"], 500, delay + 0.15))
         b.append(f'<rect x="{px+20}" y="{ly+8}" width="{mins*scale:.0f}" height="22" rx="6" fill="{col}"{anim("gx", delay + 0.3 + i*0.15)}/>')
@@ -510,7 +564,7 @@ def email_alert(t, x, y, w, delay):
     pw = (w - 32 - gap * (len(CHECK_TIMES) - 1)) / len(CHECK_TIMES)
     for i, hhmm in enumerate(CHECK_TIMES):
         px = x + 16 + i * (pw + gap)
-        out.append(f'<g{anim("a", delay + 0.3 + i * 0.06)}><rect x="{px:.1f}" y="{py+40}" width="{pw:.1f}" height="28" rx="14" '
+        out.append(f'<g{anim("a", delay + 0.3 + i * 0.06)}><rect x="{px:.1f}" y="{py+40}" width="{pw:.1f}" height="28" rx="6" '
                    f'fill="{t["card"]}" stroke="{t["line"]}"/><text x="{px + pw/2:.1f}" y="{py+54}" font-size="12.5" '
                    f'font-weight="600" class="m" fill="{t["text"]}" text-anchor="middle" dominant-baseline="central">{hhmm}</text></g>')
     return "".join(out), 80 + ph
@@ -576,8 +630,8 @@ PROJECTS = {
 
 
 # Gradient mapped to each box rather than the card, so fact tables look the same at both widths.
-BOX_GRAD = (f'<linearGradient id="sg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{GRAD[0]}"/>'
-            f'<stop offset="1" stop-color="{GRAD[2]}"/></linearGradient>')
+BOX_GRAD = (f'<linearGradient id="sg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{BOX_STOPS[0]}"/>'
+            f'<stop offset="1" stop-color="{BOX_STOPS[1]}"/></linearGradient>')
 
 
 def project(t, key, mobile):
@@ -595,7 +649,7 @@ def tracker(t, mobile):
         visual=email_alert,
         # seen.json only grows, so a floor stays true as the tracker keeps running
         stats=[("53", "artists watched"), ("4,800+", "releases logged"), ("0", "external packages")],
-        note="Built entirely by prompting AI: I directed and tested it.", icon="sparkle",
+        note="Built entirely by prompting AI: I directed and tested it.",
         tags=["Python", "GitHub Actions", "iTunes API", "Gmail SMTP"])
     return content_card(t, mobile, spec,
                         "Side project, 100% vibe coded: Apple Music Release Tracker. Checks the iTunes API every 6 hours "
@@ -605,11 +659,11 @@ def tracker(t, mobile):
 
 # ---------------------------------------------------------------- toolkit
 # Ordered the way data moves: query it, store it, prepare it, present it.
-TOOLS = [("Query & code", [("SQL", "#0090f7"), ("Python", "#3776ab"), ("pandas", "#e70488"),
-                           ("matplotlib", "#4c72b0"), ("seaborn", "#5a9bd4")]),
-         ("Databases", [("PostgreSQL", "#336791"), ("SQL Server", "#cc2927"), ("Azure SQL", "#0078d4"), ("MySQL", "#00758f")]),
-         ("Prep & modeling", [("Alteryx", "#0078c0"), ("Talend", "#ff6d70"), ("E/R Studio", "#94c941")]),
-         ("BI & visualization", [("Tableau", "#e97627"), ("Power BI", "#f2c811")])]
+TOOLS = [("Query & code", ["SQL", "Python", "pandas", "matplotlib", "seaborn"]),
+         ("Databases", ["PostgreSQL", "SQL Server", "Azure SQL", "MySQL"]),
+         ("Prep & modeling", ["Alteryx", "Talend", "E/R Studio"]),
+         ("BI & visualization", ["Tableau", "Power BI"])]
+TOOLS = [(head, [(name, RIBBON[i]) for name in items]) for i, (head, items) in enumerate(TOOLS)]
 
 
 def tool_chip(t, x, y, w, name, colr, delay):
@@ -619,7 +673,7 @@ def tool_chip(t, x, y, w, name, colr, delay):
     inherited, so without this the tspans fall back to the alphabetic baseline and sit high.
     """
     c = 'dominant-baseline="central"'
-    return (f'<g{anim("a", delay)}><rect x="{x:.1f}" y="{y}" width="{w:.1f}" height="34" rx="17" fill="{t["chip"]}"/>'
+    return (f'<g{anim("a", delay)}><rect x="{x:.1f}" y="{y}" width="{w:.1f}" height="34" rx="8" fill="{t["chip"]}"/>'
             f'<text x="{x + w/2:.1f}" y="{y+17}" font-size="13.5" font-weight="500" fill="{t["text"]}" '
             f'text-anchor="middle" {c}><tspan fill="{colr}" font-size="15" {c}>●</tspan>'
             f'<tspan dx="7" {c}>{escape(name)}</tspan></text></g>')
@@ -676,9 +730,9 @@ def education(t, mobile):
     ln = ys[-1] - ys[0]
     b.insert(1, f'<line x1="{lx}" x2="{lx}" y1="{ys[0]}" y2="{ys[-1]}" stroke="url(#vline)" stroke-width="2" {draw_attrs(ln, 0.2)}/>')
     for i, yy in enumerate(ys):
-        b.append(f'<circle cx="{lx}" cy="{yy}" r="6" fill="{GRAD[i*2]}" stroke="{t["card"]}" stroke-width="3"{anim("f", 0.3 + i*0.25)}/>')
+        b.append(f'<circle cx="{lx}" cy="{yy}" r="6" fill="{t["grad"][i*2]}" stroke="{t["card"]}" stroke-width="3"{anim("f", 0.3 + i*0.25)}/>')
     defs = (f'<linearGradient id="vline" gradientUnits="userSpaceOnUse" x1="0" y1="{ys[0]}" x2="0" y2="{ys[-1]}">'
-            f'<stop offset="0" stop-color="{GRAD[0]}"/><stop offset="1" stop-color="{GRAD[2]}"/></linearGradient>')
+            f'<stop offset="0" stop-color="{t["grad"][0]}"/><stop offset="1" stop-color="{t["grad"][2]}"/></linearGradient>')
     return svg(W, H, card(t, W, H) + "".join(b),
                "Education: MS Information Systems, Northeastern University, 2022 to 2024. "
                "B.Tech Information Technology, SRM Institute of Science and Technology, 2016 to 2020.",
