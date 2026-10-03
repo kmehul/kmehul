@@ -642,18 +642,19 @@ def project(t, key, mobile):
 def tracker(t, mobile):
     spec = dict(
         eyebrow="Side project", badge=True, title="Apple Music Release Tracker",
-        subtitle="A self-hosted new-release notifier",
-        body=("Apple Music's new-release alerts kept missing drops, so this checks the iTunes API four times a day "
-              "and emails me each new release, including drops from prolific artists that "
-              "Apple's 200-result cap used to hide."),
+        subtitle="Catching the releases Apple's own API hides",
+        body=("Apple Music's release alerts kept missing drops, and the culprit turned out to be Apple's own API: "
+              "a 200-result cap was quietly hiding the newest releases from prolific artists. This checks four "
+              "times a day, catches them anyway, and emails me."),
         visual=email_alert,
-        # seen.json only grows, so a floor stays true as the tracker keeps running
-        stats=[("53", "artists watched"), ("4,800+", "releases logged"), ("0", "external packages")],
+        # 26: the catch-up email after the fix delivered every release the cap had hidden (tracker commit e2d2df6)
+        stats=[("53", "artists watched"), ("26", "hidden releases recovered"), ("0", "dependencies")],
         note="Built entirely by prompting AI: I directed and tested it.",
         tags=["Python", "GitHub Actions", "iTunes API", "Gmail SMTP"])
     return content_card(t, mobile, spec,
-                        "Side project, 100% vibe coded: Apple Music Release Tracker. Checks the iTunes API four times a day "
-                        "for 53 artists and emails new releases. Over 4,800 releases logged, no external packages.",
+                        "Side project, 100% vibe coded: Apple Music Release Tracker, catching the releases Apple's own "
+                        "API hides. Checks four times a day for 53 artists and emails new releases; recovered 26 releases "
+                        "that Apple's 200-result cap had hidden. No dependencies.",
                         defs=VIBE_GRAD)
 
 
@@ -762,8 +763,8 @@ ALT = {
     "citibike": "Featured project: Jersey City Last-Mile Mobility, a CitiBike analysis. 94,689 verified trips, "
                 "10 priority stations, 17.8% peak daily imbalance.",
     "imdb": PROJECTS["imdb"]["label"], "food": PROJECTS["food"]["label"],
-    "tracker": "Side project, 100% vibe coded: Apple Music Release Tracker. Checks the iTunes API four times a day "
-               "for 53 artists and emails new releases.",
+    "tracker": "Side project, 100% vibe coded: Apple Music Release Tracker, catching the releases Apple's own API "
+               "hides. Checks four times a day for 53 artists and emails new releases.",
     "toolkit": "Toolkit: " + ", ".join(n for _, it in TOOLS for n, _ in it) + ".",
     "education": "Education: MS Information Systems, Northeastern University, 2022 to 2024. B.Tech Information "
                  "Technology, SRM Institute of Science and Technology, 2016 to 2020.",
