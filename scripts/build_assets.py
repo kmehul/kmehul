@@ -22,6 +22,7 @@ Every figure below comes from the resume or from the linked project repos.
 """
 import base64
 import io
+import json
 import math
 import re
 from functools import lru_cache
@@ -35,6 +36,9 @@ from fontTools.varLib import instancer
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "assets"
 FONT_FILE = ROOT / "fonts" / "HankenGrotesk[wght].ttf"
+# Live numbers from the Apple Music tracker, refreshed hourly by .github/workflows/tracker-stats.yml
+# (scripts/refresh_tracker_stats.py): artists in its artists.txt, releases in its caught.json.
+TRACKER = json.loads((ROOT / "data" / "tracker.json").read_text())
 
 SANS = "'HG', 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
 MONO = "ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Roboto Mono', monospace"
@@ -647,14 +651,14 @@ def tracker(t, mobile):
               "a 200-result cap was quietly hiding the newest releases from prolific artists. This checks four "
               "times a day, catches them anyway, and emails me."),
         visual=email_alert,
-        # 26: the catch-up email after the fix delivered every release the cap had hidden (tracker commit e2d2df6)
-        stats=[("53", "artists watched"), ("26", "hidden releases recovered"), ("0", "dependencies")],
+        stats=[(str(TRACKER["artists"]), "artists watched"), (f'{TRACKER["caught"]:,}', "releases caught"),
+               ("0", "external packages")],
         note="Built entirely by prompting AI: I directed and tested it.",
         tags=["Python", "GitHub Actions", "iTunes API", "Gmail SMTP"])
     return content_card(t, mobile, spec,
                         "Side project, 100% vibe coded: Apple Music Release Tracker, catching the releases Apple's own "
-                        "API hides. Checks four times a day for 53 artists and emails new releases; recovered 26 releases "
-                        "that Apple's 200-result cap had hidden. No dependencies.",
+                        f"API hides. Checks four times a day for {TRACKER['artists']} artists and emails new releases; "
+                        f"{TRACKER['caught']:,} releases caught so far. No external packages.",
                         defs=VIBE_GRAD)
 
 
@@ -764,7 +768,7 @@ ALT = {
                 "10 priority stations, 17.8% peak daily imbalance.",
     "imdb": PROJECTS["imdb"]["label"], "food": PROJECTS["food"]["label"],
     "tracker": "Side project, 100% vibe coded: Apple Music Release Tracker, catching the releases Apple's own API "
-               "hides. Checks four times a day for 53 artists and emails new releases.",
+               f"hides. Checks four times a day for {TRACKER['artists']} artists and emails new releases.",
     "toolkit": "Toolkit: " + ", ".join(n for _, it in TOOLS for n, _ in it) + ".",
     "education": "Education: MS Information Systems, Northeastern University, 2022 to 2024. B.Tech Information "
                  "Technology, SRM Institute of Science and Technology, 2016 to 2020.",
